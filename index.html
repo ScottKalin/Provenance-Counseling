@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; window.scrollTo(0, 0);</script>
 <title>Provenance Counseling | Online Therapy for Wisconsin Adults</title>
 <meta name="description" content="Depth-oriented online therapy for Wisconsin adults. Scott Kalin, LPC and Cate Kalin, LCSW specialize in grief work, trauma, anxiety, and emotional sensitivity. Book a free consultation.">
 <link rel="canonical" href="https://provenancecounseling.com/">
@@ -237,6 +238,7 @@ body {
 /* ============ HERO ============ */
 .hero {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1065,10 +1067,6 @@ p:last-child { margin-bottom: 0; }
 </footer>
 
 <script>
-// Prevent browser from restoring scroll position — always start at top
-if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-window.scrollTo(0, 0);
-
 // Nav scroll behavior
 const nav = document.getElementById('nav');
 if (nav) {
