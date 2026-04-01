@@ -361,7 +361,7 @@ body {
     <span></span><span></span><span></span>
   </div>
   <ul class="nav-links">
-    <li><a href="/#about">About</a></li>
+    <li><a href="/">About</a></li>
     <li><a href="scott.html">Scott Kalin</a></li>
     <li><a href="cate.html">Cate Kalin</a></li>
     <li><a href="services.html">Services</a></li>
@@ -528,8 +528,10 @@ function runIntro() {
   var vh = window.innerHeight;
   var isMobile = window.innerWidth < 768;
   frame.style.cssText = 'position:fixed;z-index:200;overflow:hidden;top:0;left:0;width:100vw;height:' + vh + 'px;border-radius:0;border:0px solid transparent;-webkit-transform:translateZ(0);transform:translateZ(0);';
-  // On mobile portrait, shift toward Scott's face on the left
-  frameImg.style.objectPosition = isMobile ? '35% center' : 'center center';
+  // Kill transition before setting position so it doesn't animate from CSS default
+  frameImg.style.transition = 'none';
+  frameImg.style.webkitTransition = 'none';
+  frameImg.style.objectPosition = isMobile ? '30% 35%' : 'center center';
   frameImg.style.filter = 'brightness(0.9)';
   frameImg.style.webkitTransform = 'translateZ(0)';
   frameImg.style.transform = 'translateZ(0)';
@@ -542,6 +544,9 @@ function runIntro() {
   void frame.offsetHeight;
 
   setTimeout(function() {
+    // Re-enable transition for the shrink animation
+    frameImg.style.transition = '';
+    frameImg.style.webkitTransition = '';
     document.body.style.background = '';
     var target = photoBox.getBoundingClientRect();
     frame.style.transition = 'top 2s cubic-bezier(0.4,0,0.12,1),left 2s cubic-bezier(0.4,0,0.12,1),width 2s cubic-bezier(0.4,0,0.12,1),height 2s cubic-bezier(0.4,0,0.12,1),border-radius 1.5s ease 0.5s,border 0.5s ease 1.5s';
@@ -554,7 +559,7 @@ function runIntro() {
     frame.style.border = '1px solid rgba(196,148,58,0.25)';
     frameImg.style.objectPosition = '30% 35%';
     frameImg.style.filter = 'brightness(1)';
-  }, 2000);
+  }, 1500);
 
   setTimeout(function() {
     photoBox.classList.add('show');
@@ -565,10 +570,10 @@ function runIntro() {
     document.body.style.position = '';
     document.body.style.width = '';
     document.body.style.top = '';
-  }, 4200);
+  }, 3700);
 
-  setTimeout(function() { text2.classList.add('show'); }, 4600);
-  setTimeout(function() { nav.classList.add('show'); }, 4700);
+  setTimeout(function() { text2.classList.add('show'); }, 4100);
+  setTimeout(function() { nav.classList.add('show'); }, 4200);
 }
 
 runIntro();
