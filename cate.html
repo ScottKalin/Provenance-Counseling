@@ -737,9 +737,12 @@ function runIntro() {
   void frame.offsetHeight;
 
   setTimeout(function() {
-    // Re-enable transition for the shrink animation
-    frameImg.style.transition = '';
-    frameImg.style.webkitTransition = '';
+    // Only re-enable img transition on desktop (where object-position actually changes)
+    // On mobile, keep transition:none — start and end are the same, no animation needed
+    if (!isMobile) {
+      frameImg.style.transition = '';
+      frameImg.style.webkitTransition = '';
+    }
     document.body.style.background = '';
     var target = photoBox.getBoundingClientRect();
     frame.style.transition = 'top 2s cubic-bezier(0.4,0,0.12,1),left 2s cubic-bezier(0.4,0,0.12,1),width 2s cubic-bezier(0.4,0,0.12,1),height 2s cubic-bezier(0.4,0,0.12,1),border-radius 1.5s ease 0.5s,border 0.5s ease 1.5s';
