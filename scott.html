@@ -113,7 +113,7 @@ body {
 }
 
 .therapist-hero { padding: 10rem 2rem 5rem; display: flex; justify-content: center; align-items: center; gap: 4rem; max-width: 1000px; margin: 0 auto; }
-@media (max-width: 768px) { .therapist-hero { flex-direction: column; padding: 8rem 2rem 3rem; gap: 2rem; text-align: center; } }
+@media (max-width: 768px) { .therapist-hero { flex-direction: column; padding: 8rem 2rem 3rem; gap: 2rem; text-align: center; } .therapist-hero-photo { width: 260px; height: 330px; } }
 
 .therapist-hero-photo { width: 300px; height: 380px; border-radius: 6px; background: linear-gradient(135deg, var(--stone-pale), var(--linen)); flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .therapist-hero-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
@@ -164,12 +164,24 @@ body {
 .flying-frame {
   position: fixed;
   top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
   z-index: 200;
   overflow: hidden;
   border-radius: 0;
   border: 0px solid transparent;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: top, left, width, height, border-radius;
+  -webkit-transition: top 2s cubic-bezier(0.4, 0, 0.12, 1),
+              left 2s cubic-bezier(0.4, 0, 0.12, 1),
+              width 2s cubic-bezier(0.4, 0, 0.12, 1),
+              height 2s cubic-bezier(0.4, 0, 0.12, 1),
+              border-radius 1.5s ease 0.5s,
+              border 0.5s ease 1.5s;
   transition: top 2s cubic-bezier(0.4, 0, 0.12, 1),
               left 2s cubic-bezier(0.4, 0, 0.12, 1),
               width 2s cubic-bezier(0.4, 0, 0.12, 1),
@@ -179,9 +191,13 @@ body {
 }
 .flying-frame img {
   width: 100%; height: 100%;
-  object-fit: cover; object-position: 34% 35%;
+  object-fit: cover; object-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   will-change: object-position, filter;
   filter: brightness(0.9);
+  -webkit-transition: object-position 2s cubic-bezier(0.4, 0, 0.12, 1),
+              filter 1.8s ease;
   transition: object-position 2s cubic-bezier(0.4, 0, 0.12, 1),
               filter 1.8s ease;
 }
@@ -197,7 +213,7 @@ body {
 .therapist-hero-photo.show { visibility: visible; }
 
 .therapist-hero-photo img {
-  width: 100%; height: 100%; object-fit: cover; object-position: 26% 35%; border-radius: 6px;
+  width: 100%; height: 100%; object-fit: cover; object-position: 30% 35%; border-radius: 6px;
 }
 
 .hero-text-1 {
@@ -345,9 +361,9 @@ body {
     <span></span><span></span><span></span>
   </div>
   <ul class="nav-links">
-    <li><a href="/">About</a></li>
-    <li><a href="scott.html">Scott Kalin</a></li>
+    <li><a href="/#about">About</a></li>
     <li><a href="cate.html">Cate Kalin</a></li>
+    <li><a href="scott.html">Scott Kalin</a></li>
     <li><a href="services.html">Services</a></li>
     <li><a href="services.html#faq">FAQ</a></li>
     <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
@@ -483,8 +499,8 @@ body {
   </div>
   <div class="footer-links">
     <a href="/">Home</a>
-    <a href="scott.html">Scott Kalin</a>
     <a href="cate.html">Cate Kalin</a>
+    <a href="scott.html">Scott Kalin</a>
     <a href="services.html">Services</a>
     <a href="services.html#faq">FAQ</a>
     <a href="contact.html">Contact</a>
@@ -502,10 +518,21 @@ function runIntro() {
   var text2 = document.getElementById('text2');
   var nav = document.querySelector('.nav');
 
+  // iOS: lock scroll during animation to prevent address bar changes
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
+  document.body.style.top = '0';
+
   frame.className = 'flying-frame';
-  frame.style.cssText = 'position:fixed;z-index:200;overflow:hidden;top:0;left:0;width:100vw;height:100vh;border-radius:0;border:0px solid transparent;';
-  frameImg.style.objectPosition = '34% 35%';
+  var vh = window.innerHeight;
+  var isMobile = window.innerWidth < 768;
+  frame.style.cssText = 'position:fixed;z-index:200;overflow:hidden;top:0;left:0;width:100vw;height:' + vh + 'px;border-radius:0;border:0px solid transparent;-webkit-transform:translateZ(0);transform:translateZ(0);';
+  // On mobile portrait, shift toward Scott's face on the left
+  frameImg.style.objectPosition = isMobile ? '35% center' : 'center center';
   frameImg.style.filter = 'brightness(0.9)';
+  frameImg.style.webkitTransform = 'translateZ(0)';
+  frameImg.style.transform = 'translateZ(0)';
   photoBox.classList.remove('show');
   text1.classList.remove('show');
   text2.classList.remove('show');
@@ -518,13 +545,14 @@ function runIntro() {
     document.body.style.background = '';
     var target = photoBox.getBoundingClientRect();
     frame.style.transition = 'top 2s cubic-bezier(0.4,0,0.12,1),left 2s cubic-bezier(0.4,0,0.12,1),width 2s cubic-bezier(0.4,0,0.12,1),height 2s cubic-bezier(0.4,0,0.12,1),border-radius 1.5s ease 0.5s,border 0.5s ease 1.5s';
+    frame.style.webkitTransition = frame.style.transition;
     frame.style.top = target.top + 'px';
     frame.style.left = target.left + 'px';
     frame.style.width = target.width + 'px';
     frame.style.height = target.height + 'px';
     frame.style.borderRadius = '6px';
     frame.style.border = '1px solid rgba(196,148,58,0.25)';
-    frameImg.style.objectPosition = '26% 35%';
+    frameImg.style.objectPosition = '30% 35%';
     frameImg.style.filter = 'brightness(1)';
   }, 2000);
 
@@ -532,6 +560,11 @@ function runIntro() {
     photoBox.classList.add('show');
     frame.classList.add('hidden');
     text1.classList.add('show');
+    // iOS: unlock scroll
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.style.top = '';
   }, 4200);
 
   setTimeout(function() { text2.classList.add('show'); }, 4600);
