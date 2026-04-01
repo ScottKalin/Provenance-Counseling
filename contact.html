@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Book a Free Consultation | Provenance Counseling</title>
+<meta name="description" content="Book a free 20-minute consultation with Scott Kalin, LPC or Cate Kalin, LCSW. Online therapy for Wisconsin adults. Reach out today.">
+<link rel="canonical" href="https://provenancecounseling.com/contact.html">
+<meta property="og:title" content="Contact | Book a Free Consultation | Provenance Counseling">
+<meta property="og:description" content="Book a free 20-minute consultation with Scott Kalin, LPC or Cate Kalin, LCSW. Online therapy for Wisconsin adults.">
+<meta property="og:url" content="https://provenancecounseling.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Provenance Counseling">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --stone: #8A8578;
+  --stone-light: #B8B2A6;
+  --stone-pale: #D4CFC6;
+  --amber: #C4943A;
+  --amber-soft: #D4AD5E;
+  --amber-glow: #E8CC8A;
+  --slate: #4A4F54;
+  --charcoal: #2E3134;
+  --deep: #1E2124;
+  --sage: #7A8F7A;
+  --moss: #5C6E54;
+  --water: #6B7F8A;
+  --linen: #F2EDE4;
+  --cream: #FAF7F2;
+  --warm-white: #FDFCF9;
+  --rain: #9BA3AB;
+  --mist: #C5CCD3;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.25rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--stone-pale);
+}
+
+.nav-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4rem 0;
+  transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 0.88rem; letter-spacing: 0.06em; }
+
+.nav-cta {
+  color: var(--amber) !important;
+  font-weight: 500;
+}
+.nav-cta:hover {
+  color: var(--charcoal) !important;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+}
+.nav-cta:hover::before {
+  background: rgba(196, 148, 58, 0.1) !important;
+}
+
+.nav-toggle { display: none; cursor: pointer; }
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--charcoal);
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .nav-toggle { display: block; z-index: 101; }
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--cream);
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.08);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 0.85rem; }
+  .nav-cta { background: var(--charcoal) !important; border-color: var(--charcoal) !important; }
+}
+
+/* PAGE HEADER */
+.page-header {
+  padding: 8rem 2rem 3rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--charcoal);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--slate);
+  line-height: 1.8;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* FORM */
+.form-section {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem 2rem 6rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--charcoal);
+  background: var(--warm-white);
+  border: 1px solid var(--stone-pale);
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--amber);
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%238A8578' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-submit {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--charcoal);
+  border: 1px solid var(--charcoal);
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.form-submit:hover {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--deep);
+}
+
+.form-note {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.82rem;
+  color: var(--stone);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/* FOOTER */
+.footer {
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--stone-pale);
+}
+
+.footer-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.footer-info {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--stone);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover { color: var(--amber); }
+
+.footer-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.72rem;
+  color: var(--stone-light);
+}
+
+/* Page header entrance */
+.page-header h1 {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.8s ease 0.3s forwards;
+}
+.page-header p {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.8s ease 0.6s forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form staggered entrance */
+.form-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease 0.9s forwards;
+}
+
+/* Form group focus glow */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px rgba(196, 148, 58, 0.08);
+}
+
+/* Submit button micro-interaction */
+.form-submit {
+  position: relative;
+  overflow: hidden;
+}
+.form-submit::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(196, 148, 58, 0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+.form-submit:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Footer reveal */
+.footer {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.footer.visible {
+  opacity: 1;
+}
+
+/* Form note fade */
+.form-note {
+  opacity: 0;
+  animation: fadeUp 0.8s ease 1.2s forwards;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav-brand">Provenance Counseling</a>
+  <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="cate.html">Cate Kalin</a></li>
+    <li><a href="scott.html">Scott Kalin</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="services.html#faq">FAQ</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<div class="page-header">
+  <h1>Ready to start? Reach out.</h1>
+  <p>Call, text, or fill out the form below. Tell us a little about what you're looking for and which therapist you're interested in, or let us know if you're unsure. We'll get back to you within one business day.</p>
+</div>
+
+<!-- FORM -->
+<div class="form-section">
+  <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="contact">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="therapist">Which therapist are you interested in?</label>
+      <select id="therapist" name="therapist">
+        <option value="" disabled selected>Select one</option>
+        <option value="Scott Kalin">Scott Kalin, LPC</option>
+        <option value="Cate Kalin">Cate Kalin, LCSW</option>
+        <option value="Not sure">I'm not sure yet</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Tell us a little about what you're looking for</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+
+    <button type="submit" class="form-submit">Send Message</button>
+  </form>
+
+  <p class="form-note">Prefer to call or text? Reach us at (608) 572-7592.</p>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">Provenance Counseling</div>
+  <div class="footer-info">
+    Scott Kalin, LPC · Cate Kalin, LCSW<br>
+    Online therapy for Wisconsin adults
+  </div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="cate.html">Cate Kalin</a>
+    <a href="scott.html">Scott Kalin</a>
+    <a href="services.html">Services</a>
+    <a href="services.html#faq">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 Provenance Counseling. All rights reserved.</div>
+</footer>
+
+<script>
+// Footer reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.footer').forEach(el => observer.observe(el));
+
+// Mobile nav: close on link click and outside tap
+const navLinks = document.querySelector('.nav-links');
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !e.target.closest('.nav-toggle')) {
+      navLinks.classList.remove('open');
+    }
+  });
+}
+</script>
+
+</body>
+</html>

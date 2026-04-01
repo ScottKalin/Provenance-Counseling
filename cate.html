@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cate Kalin, LCSW | Therapy for Highly Sensitive Women | Provenance Counseling</title>
+<meta name="description" content="Cate Kalin is a Licensed Clinical Social Worker specializing in highly sensitive women, grief work, trauma, and emotional sensitivity. Online therapy for Wisconsin adults.">
+<link rel="canonical" href="https://provenancecounseling.com/cate.html">
+<meta property="og:title" content="Cate Kalin, LCSW | Therapy for Highly Sensitive Women | Provenance Counseling">
+<meta property="og:description" content="Cate Kalin is a Licensed Clinical Social Worker specializing in highly sensitive women, grief work, trauma, and emotional sensitivity.">
+<meta property="og:url" content="https://provenancecounseling.com/cate.html">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Provenance Counseling">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Cate Kalin",
+  "jobTitle": "Licensed Clinical Social Worker",
+  "description": "Cate Kalin, LCSW specializes in therapy for highly sensitive women, grief work, trauma, eating disorders, and emotional sensitivity.",
+  "url": "https://provenancecounseling.com/cate.html",
+  "worksFor": {
+    "@type": "MedicalBusiness",
+    "name": "Provenance Counseling",
+    "url": "https://provenancecounseling.com"
+  },
+  "knowsAbout": ["Highly Sensitive Persons","Neurosequential Model of Therapeutics","Depth Hypnosis","Grief Work","Eating Disorders","Trauma Informed Care","DBT","Feminist Therapy","Somatic Therapy","Attachment-Based Therapy"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "license",
+    "name": "Licensed Clinical Social Worker (LCSW)",
+    "recognizedBy": {"@type": "State", "name": "Wisconsin"}
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --stone: #8A8578;
+  --stone-light: #B8B2A6;
+  --stone-pale: #D4CFC6;
+  --amber: #C4943A;
+  --amber-soft: #D4AD5E;
+  --slate: #4A4F54;
+  --charcoal: #2E3134;
+  --deep: #1E2124;
+  --sage: #7A8F7A;
+  --moss: #5C6E54;
+  --water: #6B7F8A;
+  --linen: #F2EDE4;
+  --cream: #FAF7F2;
+  --warm-white: #FDFCF9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.25rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--stone-pale);
+  transition: padding 0.3s ease;
+}
+
+.nav-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4rem 0;
+  transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 0.88rem; letter-spacing: 0.06em; }
+
+.nav-cta {
+  color: var(--amber) !important;
+  font-weight: 500;
+}
+.nav-cta:hover {
+  color: var(--charcoal) !important;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+}
+.nav-cta:hover::before {
+  background: rgba(196, 148, 58, 0.1) !important;
+}
+
+.nav-toggle { display: none; cursor: pointer; }
+.nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--charcoal); margin: 5px 0; transition: all 0.3s; }
+
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .nav-toggle { display: block; z-index: 101; }
+  .nav-links {
+    position: fixed; top: 0; right: -100%;
+    width: 75%; max-width: 320px; height: 100vh;
+    background: var(--cream);
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.08);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 0.85rem; }
+}
+
+/* THERAPIST HERO */
+.therapist-hero {
+  padding: 10rem 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 3px solid var(--sage);
+}
+
+@media (max-width: 768px) {
+  .therapist-hero {
+    flex-direction: column;
+    padding: 8rem 2rem 3rem;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+/* ═══ FLYING FRAME INTRO ═══ */
+.flying-frame {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 200;
+  overflow: hidden;
+  border-radius: 0;
+  border: 0px solid transparent;
+  will-change: top, left, width, height, border-radius;
+  transition: top 2s cubic-bezier(0.4, 0, 0.12, 1),
+              left 2s cubic-bezier(0.4, 0, 0.12, 1),
+              width 2s cubic-bezier(0.4, 0, 0.12, 1),
+              height 2s cubic-bezier(0.4, 0, 0.12, 1),
+              border-radius 1.5s ease 0.5s,
+              border 0.5s ease 1.5s;
+}
+.flying-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center center;
+  will-change: object-position, filter;
+  filter: brightness(0.9);
+  transition: object-position 2s cubic-bezier(0.4, 0, 0.12, 1),
+              filter 1.8s ease;
+}
+.flying-frame.hidden { display: none; }
+
+.therapist-hero-photo {
+  width: 300px;
+  height: 380px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, rgba(122,143,122,0.18), rgba(92,110,84,0.18));
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(122,143,122,0.25);
+  visibility: hidden;
+}
+.therapist-hero-photo.show { visibility: visible; }
+
+.therapist-hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero-text-1 {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.hero-text-2 {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.hero-text-1.show, .hero-text-2.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nav hidden during intro */
+.nav { opacity: 0; transition: opacity 0.6s ease; }
+.nav.show { opacity: 1; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.photo-placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  color: var(--stone);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.therapist-hero-text {
+  max-width: 520px;
+}
+
+.therapist-hero-text h1 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--charcoal);
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.therapist-cred {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--moss);
+  margin-bottom: 1.75rem;
+}
+
+.therapist-hero-text .intro {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+/* CONTENT SECTIONS */
+.content-section {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.content-section h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--charcoal);
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--sage);
+}
+
+.content-section p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--slate);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.content-section p:last-child { margin-bottom: 0; }
+
+.content-section em {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1.02em;
+}
+
+.section-rule {
+  width: 40px;
+  height: 1px;
+  background: var(--sage);
+  margin: 3.5rem 0;
+}
+
+/* LINEN SECTION */
+.linen-section {
+  background: linear-gradient(135deg, rgba(122,143,122,0.08) 0%, rgba(92,110,84,0.08) 100%);
+  padding: 4rem 0;
+}
+
+/* Alternating subtle tinted backgrounds */
+.content-section.tint {
+  position: relative;
+}
+.content-section.tint::before {
+  content: '';
+  position: absolute;
+  left: -50vw; right: -50vw;
+  top: 0; bottom: 0;
+  background: linear-gradient(180deg, rgba(122,143,122,0.03) 0%, rgba(92,110,84,0.03) 100%);
+  z-index: -1;
+}
+
+/* CTA SECTION */
+.page-cta {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(175deg, rgba(122,143,122,0.08) 0%, rgba(92,110,84,0.06) 100%);
+}
+
+.page-cta h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.page-cta p {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--stone);
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--charcoal);
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: var(--amber);
+  color: var(--deep);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--deep);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--stone);
+  margin-bottom: 0.5rem;
+}
+
+.footer-info {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.72rem;
+  color: var(--slate);
+  line-height: 1.8;
+}
+
+.footer-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--amber); }
+
+.footer-copy {
+  margin-top: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.65rem;
+  color: var(--slate);
+}
+.pull-quote {
+  max-width: 680px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  border-left: 4px solid var(--sage);
+  background: linear-gradient(135deg, rgba(122,143,122,0.1) 0%, rgba(92,110,84,0.05) 100%);
+  border-radius: 0 4px 4px 0;
+}
+.pull-quote p {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: var(--charcoal);
+  line-height: 1.5;
+  font-style: italic;
+  margin: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal delays */
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+
+/* Pull quote slide-in from left */
+.pull-quote.reveal {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.pull-quote.reveal.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Section rule draw animation */
+.section-rule {
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.8s ease;
+}
+.section-rule.visible {
+  transform: scaleX(1);
+}
+
+/* Enhanced sage tinted sections */
+.content-section.tint::before {
+  background: linear-gradient(180deg, rgba(122,143,122,0.05) 0%, rgba(92,110,84,0.04) 100%);
+}
+
+/* CTA section reveal */
+.page-cta {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.page-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer reveal */
+.footer {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.footer.visible {
+  opacity: 1;
+}
+
+/* H2 border-left draw animation */
+.content-section h2 {
+  border-left-color: transparent;
+  transition: border-left-color 0.6s ease 0.3s;
+}
+.reveal.visible h2 {
+  border-left-color: var(--sage);
+}
+
+</style>
+</head>
+<body>
+
+<!-- FLYING FRAME -->
+<div class="flying-frame" id="flyingFrame">
+  <img src="/images/cate-hero.jpg" alt="">
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav-brand">Provenance Counseling</a>
+  <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="cate.html">Cate Kalin</a></li>
+    <li><a href="scott.html">Scott Kalin</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="services.html#faq">FAQ</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="therapist-hero">
+  <div class="therapist-hero-photo" id="photoBox">
+    <img src="/images/cate-hero.jpg" alt="Cate Kalin, LCSW">
+  </div>
+  <div class="therapist-hero-text">
+    <div class="hero-text-1" id="text1">
+      <h1>Cate Kalin</h1>
+      <div class="therapist-cred">LCSW · Licensed Clinical Social Worker · Wisconsin</div>
+    </div>
+    <div class="hero-text-2" id="text2">
+      <p class="intro">You've been holding it together for a very long time. You are safe now.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OPENING -->
+<section class="content-section reveal">
+  <p>On the outside, people see someone impressive. Accomplished, capable, the one who handles things. They have no idea what it costs you. The anxiety humming underneath everything. The hurt feelings you've learned to swallow. The loneliness of being surrounded by people who love you but don't understand you. Not really. Not all the way down.</p>
+
+  <p>You feel more than most people. You always have. Not because something is wrong with you, but because that's how you were built. Biologically, from birth. High sensitivity isn't anxiety. It isn't being overwhelmed. It's a nervous system that takes in more, processes more deeply, and holds onto it longer. It comes with extraordinary gifts: intuition, creativity, empathy, the capacity for awe that makes other people wonder what you're seeing that they can't.</p>
+
+  <p>But it also means that the world wasn't built for you. Somewhere along the way, you received a message. Maybe it came from a classroom, a friendship, a family dinner, or a culture that rewards toughness over tenderness. The message was: quiet down. Shrink. Stop feeling so much. And you didn't just learn to hide how you felt. You learned to stop trusting that you felt it at all.</p>
+
+  <p>And so you built a life on external cues. You figured out what other people needed you to be, and you became it. Beautifully, convincingly, for years. Until something cracked. A career that stopped meaning anything. A marriage that couldn't hold the real you because neither of you knew who that was. A child who needed a kind of presence you couldn't access because you'd been gone from your own body for so long. Perimenopause. Burnout. A health crisis that finally forced you to stop.</p>
+
+  <p>Now you're here. And the question isn't <em>what's wrong with me.</em> The question is <em>who am I when I stop performing?</em></p>
+
+  <p>That's where I come in.</p>
+</section>
+
+<div class="section-rule" style="margin: 0 auto;"></div>
+
+<!-- WHAT THE WORK LOOKS LIKE -->
+<section class="content-section reveal">
+  <h2>What the Work Looks Like</h2>
+
+  <p>Most women cycle between two stories: "there's something wrong with me" and "everything's fine." Both are a facade of safety. I won't let you hide behind them, but I will trust your timing and pace.</p>
+
+  <p>Often in the first few sessions, I put words to something you've felt your entire life but couldn't articulate. Clients tell me this is the moment they know they're in the right place. I've sat with hundreds of women who carry exactly what you carry, and I've learned the language for it.</p>
+
+  <p>The work moves through layers. Fear meets you at the door of each one. It comes as "what if," as tension in the body, as the urge to stop. It will show up before every emotion we work with. That's normal. We move through it together.</p>
+
+  <p>The first layer is usually shame. The belief that something is fundamentally wrong with you. It lives in the pit of your stomach, in the urge to disappear, in the story of "what's wrong with me." We slow down here. We bring awareness to the thoughts and body sensations, and we begin to acknowledge and metabolize what you've always been afraid to look at.</p>
+
+  <p>Underneath shame lives anger. Real anger. The kind women are taught to never acknowledge, voice, or act on in order to be "good." It comes with thoughts that feel unnameable and body sensations that feel uncontainable. We stay with it. We support you through it until you become a stable container for your own anger, until it stops being something that controls you and becomes something that belongs to you.</p>
+
+  <p>Beneath the anger is grief. Loss of connection, loss of relationship, loss of a person, loss of who you thought you were or the life you thought you would have. As the awareness grows, there is a heaviness in the chest that builds into heartbreak. A moment of intense sadness spilling from the heart. And then a stillness. A loneliness. The quiet that comes when you stop running and let yourself be still.</p>
+
+  <p>Sitting with that loneliness, trusting it despite every urge to run, is some of the bravest work you will ever do. And on the other side of it, something shifts. A subtle joy. It might come as connection, a smile from a stranger, a laugh in session, a hug from your child, a moment where you feel less alone. A deepening of self-trust. A sense of meaning, not "everything happens for a reason," but "I can find meaning in the hard moments." A gratitude for the small pleasures in life, for the people who did show up, for the perseverance your younger self showed, for the body that was always there supporting you the best way it could.</p>
+
+  <p>By avoiding the grief, you've also been avoiding the joy. They live in the same place. This is the wisdom that lives inside heartache. This is your intuition coming home.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"By avoiding the grief, you've also been avoiding the joy. They live in the same place."</p>
+</div>
+
+<div class="linen-section">
+  <section class="content-section reveal" style="padding: 4rem 2rem;">
+    <h2>What I Bring</h2>
+
+    <p>I'm warm, honest, and direct, but gentle with my directness. I don't see my role as telling you what to do. I see it as helping you hear what you already know but haven't trusted yourself to listen to.</p>
+
+    <p>My clinical training runs deep. I spent four years at Rogers Behavioral Health, one of the country's most rigorous psychiatric systems, working across inpatient, residential, and intensive outpatient levels. I've sat with people in psychosis, in active addiction, in the worst moments of their lives. I ran groups, led psychoeducational lectures, ran family sessions, and held space in rooms most clinicians would find intimidating. I worked the eating disorder unit and understand deeply how sensitive women turn against their own bodies when they don't have another way to manage what they feel. Before Rogers, I worked at St. Aemilian Lakeside, a residential facility for teenage boys with severe trauma histories that utilized Dr. Bruce Perry's Neurosequential Model of Therapeutics and ushered in Trauma Informed Care to the state of Wisconsin. That background matters because so much of the work I do with sensitive women is intuitive, it lives in the body, in felt experience, in the space between us. But my intuition isn't guesswork. It's backed by years of clinical science, neuroscience, and direct experience with how the brain and nervous system actually heal.</p>
+
+    <p>I also bring my own contemplative practice. Training in Depth Hypnosis through the Sacred Stream Center, a Jungian-shamanic-Buddhist framework that traces somatic and emotional experience back to its deepest roots. I'm not actively practicing Depth Hypnosis in sessions at this time, but it profoundly shapes how I understand what's happening underneath the surface.</p>
+
+    <p>And I bring a feminist lens. Not as a political stance, but as a clinical tool. I will name the patriarchy in the room when it's relevant. I will name capitalism, racism, the systems that taught you your anger was burdensome and your needs were inconvenient. Because sometimes the most therapeutic work I can do is help you see that the pain you've been carrying as personal failure is actually a rational response to an irrational world.</p>
+  </section>
+</div>
+
+<!-- COMING HOME TO YOURSELF -->
+<section class="content-section tint reveal">
+  <h2>Coming Home to Yourself</h2>
+
+  <p>There's a moment I watch for. It's different for every woman, but I always recognize it.</p>
+
+  <p>She speaks up in a relationship and doesn't apologize afterward. Her body starts to feel like something she lives in, not something she manages. She feels joy and doesn't immediately brace for it to be taken away. She stops editing herself before she enters a room.</p>
+
+  <p>This is what it looks like when the performing stops. Not collapse, not giving up, but the subtle arrival of a woman who finally trusts her own experience. Her sensitivity stops being the thing she survives and becomes the thing she lives from. Her emotions stop being a threat and become information. Her body stops being something she has to control and becomes home.</p>
+
+  <p>This is what we're working toward. Not a version of you that feels less. A version of you that feels everything and doesn't abandon herself in the process.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"Your sensitivity is not the obstacle. It's the instrument."</p>
+</div>
+
+<!-- MY CLIENTS -->
+<section class="content-section reveal">
+  <h2>My Clients</h2>
+
+  <p>The women I work with are smart, intuitive, deeply empathic. They've tried therapy before, maybe more than once. They've read the books, listened to the podcasts, journaled, meditated. Some have been on medication that took the edge off but never resolved what was underneath. They've done a lot of work. And they're still exhausted.</p>
+
+  <p>Something brought them here. A relationship that finally cracked. A body that stopped cooperating. A morning where they looked in the mirror and realized they had no idea who was looking back. Sometimes it's leaving home for the first time and discovering that the identity they built to survive their family doesn't work anywhere else. Sometimes it's all of it at once.</p>
+
+  <p>They're the women other people lean on. The ones who hold the room together while quietly falling apart inside it. They've been performing so long they don't know where the performance ends and they begin. And they're ready, maybe terrified, but ready, to find out.</p>
+
+  <p>If that sounds like you, I'd like to talk with you.</p>
+</section>
+
+<!-- CTA -->
+<section class="page-cta" id="cta">
+  <h2>Book a Free 20-Minute Consultation</h2>
+  <p>This is the first step. Twenty minutes. No commitment. Just two people talking honestly about whether this work makes sense for you.</p>
+  <a href="contact.html" class="btn-primary">Book a Consultation</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">Provenance Counseling</div>
+  <div class="footer-info">
+    Scott Kalin, LPC · Cate Kalin, LCSW<br>
+    Online therapy for Wisconsin adults
+  </div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="cate.html">Cate Kalin</a>
+    <a href="scott.html">Scott Kalin</a>
+    <a href="services.html">Services</a>
+    <a href="services.html#faq">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 Provenance Counseling. All rights reserved.</div>
+</footer>
+
+<script>
+// ═══ FLYING FRAME INTRO ═══
+function runIntro() {
+  var frame = document.getElementById('flyingFrame');
+  var frameImg = frame.querySelector('img');
+  var photoBox = document.getElementById('photoBox');
+  var text1 = document.getElementById('text1');
+  var text2 = document.getElementById('text2');
+  var nav = document.querySelector('.nav');
+
+  frame.className = 'flying-frame';
+  frame.style.cssText = 'position:fixed;z-index:200;overflow:hidden;top:0;left:0;width:100vw;height:100vh;border-radius:0;border:0px solid transparent;';
+  frameImg.style.objectPosition = 'center center';
+  frameImg.style.filter = 'brightness(0.9)';
+  photoBox.classList.remove('show');
+  text1.classList.remove('show');
+  text2.classList.remove('show');
+  nav.classList.remove('show');
+  document.body.style.background = '#1E2124';
+
+  void frame.offsetHeight;
+
+  setTimeout(function() {
+    document.body.style.background = '';
+    var target = photoBox.getBoundingClientRect();
+    frame.style.transition = 'top 2s cubic-bezier(0.4,0,0.12,1),left 2s cubic-bezier(0.4,0,0.12,1),width 2s cubic-bezier(0.4,0,0.12,1),height 2s cubic-bezier(0.4,0,0.12,1),border-radius 1.5s ease 0.5s,border 0.5s ease 1.5s';
+    frame.style.top = target.top + 'px';
+    frame.style.left = target.left + 'px';
+    frame.style.width = target.width + 'px';
+    frame.style.height = target.height + 'px';
+    frame.style.borderRadius = '6px';
+    frame.style.border = '1px solid rgba(122,143,122,0.25)';
+    frameImg.style.objectPosition = 'center center';
+    frameImg.style.filter = 'brightness(1)';
+  }, 2000);
+
+  setTimeout(function() {
+    photoBox.classList.add('show');
+    frame.classList.add('hidden');
+    text1.classList.add('show');
+  }, 4200);
+
+  setTimeout(function() { text2.classList.add('show'); }, 4600);
+  setTimeout(function() { nav.classList.add('show'); }, 4700);
+}
+
+runIntro();
+
+// Scroll reveals
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .section-rule, .page-cta, .footer').forEach(function(el) { observer.observe(el); });
+
+// Mobile nav
+var navLinks = document.querySelector('.nav-links');
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() { navLinks.classList.remove('open'); });
+  });
+  document.addEventListener('click', function(e) {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !e.target.closest('.nav-toggle')) {
+      navLinks.classList.remove('open');
+    }
+  });
+}
+</script>
+</body>
+</html>

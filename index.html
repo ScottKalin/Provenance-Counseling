@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Provenance Counseling | Online Therapy for Wisconsin Adults</title>
+<meta name="description" content="Depth-oriented online therapy for Wisconsin adults. Scott Kalin, LPC and Cate Kalin, LCSW specialize in grief work, trauma, anxiety, and emotional sensitivity. Book a free consultation.">
+<link rel="canonical" href="https://provenancecounseling.com/">
+<meta property="og:title" content="Provenance Counseling | Online Therapy for Wisconsin Adults">
+<meta property="og:description" content="Depth-oriented online therapy for Wisconsin adults. Scott Kalin, LPC and Cate Kalin, LCSW specialize in grief work, trauma, anxiety, and emotional sensitivity.">
+<meta property="og:url" content="https://provenancecounseling.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Provenance Counseling">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Provenance Counseling",
+  "description": "Depth-oriented online therapy for Wisconsin adults specializing in grief work, trauma, anxiety, and emotional sensitivity.",
+  "url": "https://provenancecounseling.com",
+  "telephone": "(608) 572-7592",
+  "priceRange": "$225-$360",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "WI",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.0731,
+    "longitude": -89.4012
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Scott Kalin",
+      "jobTitle": "Licensed Professional Counselor",
+      "description": "Specializes in inhibited grieving, trauma, spiritual integration, and couples therapy.",
+      "knowsAbout": ["Contemplative Psychotherapy","Inhibited Grieving","Somatic Experiencing","Hakomi","Interpersonal Reconstructive Therapy","Couples Therapy","Spiritual Integration"]
+    },
+    {
+      "@type": "Person",
+      "name": "Cate Kalin",
+      "jobTitle": "Licensed Clinical Social Worker",
+      "description": "Specializes in highly sensitive women, grief work, trauma, eating disorders, and emotional sensitivity.",
+      "knowsAbout": ["Highly Sensitive Persons","Neurosequential Model of Therapeutics","Depth Hypnosis","Grief Work","Eating Disorders","Trauma Informed Care","Feminist Therapy"]
+    }
+  ],
+  "areaServed": {
+    "@type": "State",
+    "name": "Wisconsin"
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --stone: #8A8578;
+  --stone-light: #B8B2A6;
+  --stone-pale: #D4CFC6;
+  --amber: #C4943A;
+  --amber-soft: #D4AD5E;
+  --amber-glow: #E8CC8A;
+  --slate: #4A4F54;
+  --charcoal: #2E3134;
+  --deep: #1E2124;
+  --sage: #7A8F7A;
+  --moss: #5C6E54;
+  --water: #6B7F8A;
+  --linen: #F2EDE4;
+  --cream: #FAF7F2;
+  --warm-white: #FDFCF9;
+  --rain: #9BA3AB;
+  --mist: #C5CCD3;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============ NAV ============ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.25rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+.nav.scrolled {
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--stone-pale);
+  padding: 0.85rem 3rem;
+}
+
+.nav-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--cream);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.4s ease;
+}
+
+.nav.scrolled .nav-brand { color: var(--charcoal); }
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(250, 247, 242, 0.5);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4rem 0;
+  transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Bright moss/water on hover — luminous against dark hero */
+.nav-links li:nth-child(odd) a:hover {
+  color: #B8D4B8;
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 12px rgba(122, 143, 122, 0.5), 0 0 4px rgba(184, 212, 184, 0.3);
+}
+.nav-links li:nth-child(even) a:hover {
+  color: #B0CCDA;
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 12px rgba(107, 127, 138, 0.5), 0 0 4px rgba(176, 204, 218, 0.3);
+}
+
+/* Scrolled state — darker, no glow needed on cream bg */
+.nav.scrolled .nav-links a { color: var(--stone); }
+.nav.scrolled .nav-links li:nth-child(odd) a:hover {
+  color: var(--moss);
+  text-shadow: none;
+}
+.nav.scrolled .nav-links li:nth-child(even) a:hover {
+  color: var(--water);
+  text-shadow: none;
+}
+
+/* CTA — amber, bright on hover */
+.nav-links a.nav-cta {
+  color: rgba(212, 173, 94, 0.7) !important;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.nav-links a.nav-cta:hover {
+  color: #EDD9A3 !important;
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 12px rgba(196, 148, 58, 0.5), 0 0 4px rgba(237, 217, 163, 0.3);
+}
+.nav.scrolled .nav-links a.nav-cta {
+  color: var(--amber) !important;
+}
+.nav.scrolled .nav-links a.nav-cta:hover {
+  color: var(--charcoal) !important;
+  text-shadow: none;
+}
+
+
+/* Mobile nav */
+.nav-toggle { display: none; cursor: pointer; }
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--cream);
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+.nav.scrolled .nav-toggle span { background: var(--charcoal); }
+
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .nav.scrolled { padding: 0.75rem 1.5rem; }
+  .nav-toggle { display: block; z-index: 101; }
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--cream);
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.08);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 0.85rem; }
+  .nav-cta { background: var(--charcoal) !important; border-color: var(--charcoal) !important; }
+}
+
+/* ============ HERO ============ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 2rem 6rem;
+  background: url('/images/hero-bg.jpg') center 35% / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+}
+
+/* ═══ HERO REVEAL ANIMATION ═══ */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(175deg,
+    rgba(30, 33, 36, 0.78) 0%,
+    rgba(74, 79, 84, 0.55) 40%,
+    rgba(138, 133, 120, 0.45) 70%,
+    rgba(184, 178, 166, 0.35) 90%
+  );
+  /* PHOTO SWAP: When hero-bg.jpg is live, change opacity to 0 and restore animation:
+     opacity: 0; animation: overlayIn 1.8s ease 1s forwards; */
+  opacity: 0;
+  animation: overlayIn 1.8s ease 1s forwards;
+  z-index: 1;
+}
+
+.hero-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 70%, rgba(196, 148, 58, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(107, 127, 138, 0.12) 0%, transparent 50%);
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-group-1,
+.hero-group-2,
+.hero-group-3 {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* PHOTO SWAP: When hero-bg.jpg is live, change delays to 2s / 2.8s / 3.4s */
+.hero-group-1 { animation: fadeUp 1.2s ease 2s forwards; }
+.hero-group-2 { animation: fadeUp 1.2s ease 2.8s forwards; }
+.hero-group-3 { animation: fadeUp 1s ease 3.4s forwards; }
+
+.hero-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--amber-soft);
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-size: clamp(2.6rem, 5.5vw, 4rem);
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 2rem;
+}
+
+.hero-body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--linen);
+  line-height: 1.8;
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-return {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--cream);
+  margin-bottom: 2.5rem;
+}
+
+.hero-meta {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.98rem;
+  color: var(--stone-pale);
+  letter-spacing: 0.05em;
+  margin-bottom: 2.5rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: transparent;
+  border: 1px solid rgba(250, 247, 242, 0.3);
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--deep);
+}
+
+.hero-line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--stone-light), transparent);
+  margin: 3rem auto 0;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ SECTIONS ============ */
+.section {
+  padding: 6rem 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-wide {
+  padding: 6rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-full {
+  padding: 6rem 2rem;
+}
+
+.section-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 1.5rem;
+}
+
+.section h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  color: var(--charcoal);
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+.section-wide h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  color: var(--charcoal);
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p { margin-bottom: 1.25rem; }
+p:last-child { margin-bottom: 0; }
+
+.body-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--slate);
+  line-height: 1.8;
+}
+
+.accent-text {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--stone);
+  line-height: 1.75;
+}
+
+/* Dividers */
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--amber);
+  margin: 0 auto;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--stone-pale), transparent);
+}
+
+/* ============ BELIEVE ============ */
+.believe {
+  background: linear-gradient(180deg, var(--linen) 0%, var(--cream) 100%);
+  position: relative;
+}
+.believe::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+  pointer-events: none;
+}
+
+/* ============ THERAPISTS CARDS ============ */
+.therapists-section {
+  background: var(--linen);
+  padding: 6rem 2rem;
+}
+
+.therapists-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.therapists-intro h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.therapists-intro p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: var(--stone);
+  line-height: 1.7;
+}
+
+.therapist-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .therapist-cards { grid-template-columns: 1fr; max-width: 480px; }
+}
+
+.therapist-card {
+  background: var(--warm-white);
+  border: 1px solid var(--stone-pale);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.therapist-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  border-color: var(--amber-soft);
+  transform: translateY(-2px);
+}
+
+.therapist-photo {
+  width: 100%;
+  height: 280px;
+  background: linear-gradient(135deg, var(--stone-pale), var(--linen));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.therapist-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  color: var(--stone);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.therapist-card-body {
+  padding: 1.75rem;
+}
+
+.therapist-card-name {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--charcoal);
+  margin-bottom: 0.15rem;
+}
+
+.therapist-card-cred {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 1rem;
+}
+
+.therapist-card-tagline {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--slate);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.therapist-card-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: var(--stone);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.therapist-card-link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+  transition: color 0.2s;
+}
+
+.therapist-card:hover .therapist-card-link { color: var(--charcoal); }
+
+/* ============ HOW IT WORKS ============ */
+.how-section { background: var(--cream); }
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2.5rem auto 0;
+}
+
+@media (max-width: 700px) {
+  .how-grid { grid-template-columns: 1fr; max-width: 480px; }
+}
+
+.how-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.how-item-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 0.75rem;
+}
+
+.how-item p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.88rem;
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+.how-details {
+  max-width: 600px;
+  margin: 2.5rem auto 0;
+  text-align: center;
+}
+
+.how-fees {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.how-fees-note {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.82rem;
+  color: var(--stone);
+}
+
+/* ============ WHO WE WORK WITH ============ */
+.who-section {
+  background: linear-gradient(175deg, var(--charcoal) 0%, var(--slate) 100%);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.who-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
+
+.who-content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.who-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.who-btn {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 0.9rem 1.4rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(250, 247, 242, 0.12);
+  cursor: pointer;
+  text-align: center;
+  flex: 1 1 calc(50% - 0.85rem);
+  min-width: 280px;
+}
+
+@media (max-width: 640px) {
+  .who-btn {
+    flex: 1 1 100%;
+    min-width: unset;
+    padding: 1.1rem 1.4rem;
+    font-size: 1rem;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.who-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.who-btn-slate {
+  background: var(--slate);
+  color: var(--cream);
+}
+.who-btn-slate:hover { background: #5a5f64; }
+
+.who-btn-sage {
+  background: var(--sage);
+  color: var(--cream);
+}
+.who-btn-sage:hover { background: #8a9f8a; }
+
+.who-btn-water {
+  background: var(--water);
+  color: var(--cream);
+}
+.who-btn-water:hover { background: #7b8f9a; }
+
+.who-btn-moss {
+  background: var(--moss);
+  color: var(--cream);
+}
+.who-btn-moss:hover { background: #6c7e64; }
+
+.who-btn-amber {
+  background: var(--amber);
+  color: var(--deep);
+}
+.who-btn-amber:hover { background: var(--amber-soft); }
+
+.who-btn-stone {
+  background: var(--stone);
+  color: var(--cream);
+}
+.who-btn-stone:hover { background: var(--stone-light); }
+
+.who-closing {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.92rem;
+  color: var(--cream);
+  line-height: 1.8;
+}
+
+/* ============ THE NAME ============ */
+.name-section { background: var(--linen); }
+
+/* ============ FOOTER CTA ============ */
+.footer-cta-section {
+  background: var(--cream);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.footer-cta-section h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.footer-cta-section p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: var(--stone);
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--charcoal);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--amber);
+  color: var(--deep);
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  background: var(--deep);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--stone);
+  margin-bottom: 0.5rem;
+}
+
+.footer-info {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.72rem;
+  color: var(--slate);
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.footer-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--amber); }
+
+@media (max-width: 480px) {
+  .footer-links { gap: 1.25rem 1.5rem; }
+}
+
+.footer-copy {
+  margin-top: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.65rem;
+  color: var(--slate);
+  letter-spacing: 0.03em;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="/" class="nav-brand">Provenance Counseling</a>
+  <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="cate.html">Cate Kalin</a></li>
+    <li><a href="scott.html">Scott Kalin</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="services.html#faq">FAQ</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-group-1">
+      <div class="hero-eyebrow">Provenance Counseling</div>
+      <h1>The pain you avoid is the life you don't live.</h1>
+    </div>
+    <div class="hero-group-2">
+      <p class="hero-body">You've understood your patterns for years. You can name them, trace them back, explain them to friends over dinner. And still. The same ache. The same loops. The same quiet distance between who you are and who you know you could be.</p>
+      <p class="hero-body" style="margin-bottom: 0.5rem;">Understanding was never the problem.</p>
+      <p class="hero-return">Held here, so you can stand anywhere.</p>
+    </div>
+    <div class="hero-group-3">
+      <p class="hero-meta">Scott Kalin, LPC &amp; Cate Kalin, LCSW · Online therapy for Wisconsin adults</p>
+      <a href="contact.html" class="hero-cta">Book a Free Consultation</a>
+      <div class="hero-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE BELIEVE -->
+<section class="section believe" id="about">
+  <div class="section-label">What We Believe</div>
+  <div class="body-text">
+    <p>Most people who find us have already been in therapy. They've done the insight work. They understand <em>why</em> they are the way they are. And yet.</p>
+    <p>Something deeper hasn't moved.</p>
+    <p>We believe that's because real change doesn't come from understanding alone. It comes from the willingness to feel what you've spent your whole life avoiding, and to discover that you can survive it. That the grief, the anger, the shame, the emptiness you've been managing and medicating and outrunning are not the things that will destroy you. They're the doorway back to yourself.</p>
+    <p>Provenance means origin. The traced history of where something comes from. That's what we do. We trace the pain back to where it started. Not to analyze it. To grieve it. To let the old identity that was built on top of those wounds finally be seen, honored, and released.</p>
+    <p>What's on the other side isn't comfort. It's something better. It's your own feet on the ground. Your own voice in your chest. A life you don't have to white-knuckle your way through.</p>
+    <p>We are a small, deliberate practice. Two therapists. A limited number of clients. This is not volume work. If we take you on, we are <em>with</em> you. All the way through the cold rain and back out into the clearing.</p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TWO THERAPISTS -->
+<section class="therapists-section">
+  <div class="therapists-intro">
+    <h2>Two therapists. One practice.</h2>
+    <p>Scott and Cate Kalin are a husband-and-wife team whose work meets at grief and branches from there. Choose the therapist whose presence speaks to where you are, or tell us you're unsure. That's what the consultation is for.</p>
+  </div>
+
+  <div class="therapist-cards">
+    <!-- CATE -->
+    <a href="cate.html" class="therapist-card">
+      <div class="therapist-photo">
+        <img src="/images/cate-thumb.jpg" alt="Cate Kalin, LCSW — Provenance Counseling">
+      </div>
+      <div class="therapist-card-body">
+        <div class="therapist-card-name">Cate Kalin</div>
+        <div class="therapist-card-cred">LCSW · Licensed Clinical Social Worker</div>
+        <div class="therapist-card-tagline">For women who feel everything and learned to hide it.</div>
+        <div class="therapist-card-desc">You feel more than most people. You always have. Cate knows this territory deeply. She is warm, direct, and will name what's actually happening beneath the performance. If you're a sensitive woman who is tired of abandoning herself, Cate will help you find your way back.</div>
+        <div class="therapist-card-link">Learn more about working with Cate →</div>
+      </div>
+    </a>
+
+    <!-- SCOTT -->
+    <a href="scott.html" class="therapist-card">
+      <div class="therapist-photo">
+        <img src="/images/scott-thumb.jpg" alt="Scott Kalin, LPC — Provenance Counseling">
+      </div>
+      <div class="therapist-card-body">
+        <div class="therapist-card-name">Scott Kalin</div>
+        <div class="therapist-card-cred">LPC · Contemplative Psychotherapy</div>
+        <div class="therapist-card-tagline">For people who've done the work, understand the patterns, and still can't break free.</div>
+        <div class="therapist-card-desc">When you connect with Scott, something settles. There's a groundedness and depth to his presence that clients recognize immediately, a directness that makes the room feel alive. He is honest, loving, and unwilling to let you stay comfortable in a story that isn't serving you. If you're ready for rapid, real change, not years of circling the same insight, he'll meet you there.</div>
+        <div class="therapist-card-link">Learn more about working with Scott →</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-wide how-section">
+  <div class="section-label" style="text-align:center;">How It Works</div>
+
+  <div class="how-grid">
+    <div class="how-item">
+      <div class="how-item-label">Reach Out</div>
+      <p>Call, text, or use the contact form. Tell us a little about what you're looking for.</p>
+    </div>
+    <div class="how-item">
+      <div class="how-item-label">Free Consultation</div>
+      <p>We talk for twenty minutes. Honestly, openly, no pressure. If it's not a fit, we'll tell you directly.</p>
+    </div>
+    <div class="how-item">
+      <div class="how-item-label">Begin the Work</div>
+      <p>Weekly sessions on Zoom. You don't need to be in crisis to start. You just need to be tired of the version of yourself that isn't working anymore.</p>
+    </div>
+  </div>
+
+  <div class="how-details">
+    <p class="how-fees">$225 / 50 minutes · $360 / 80 minutes</p>
+    <p class="how-fees-note">Private pay. Superbill provided for out-of-network reimbursement.</p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- WHO WE WORK WITH -->
+<section class="who-section">
+  <div class="who-content">
+    <div class="section-label" style="color: var(--amber-soft); text-align: center;">Who We Work With</div>
+    <div class="who-buttons">
+      <a href="scott.html" class="who-btn who-btn-slate">"I understand my patterns. I just can't change them."</a>
+      <a href="cate.html" class="who-btn who-btn-sage">"I feel everything and I'm exhausted by it."</a>
+      <a href="services.html" class="who-btn who-btn-water">"I've been in therapy before and it didn't help. Not really."</a>
+      <a href="cate.html" class="who-btn who-btn-moss">"I keep ending up in the same relationships no matter how much I understand why."</a>
+      <a href="scott.html" class="who-btn who-btn-amber">"I had a spiritual experience that cracked me open and I don't know how to live with what I found."</a>
+      <a href="scott.html" class="who-btn who-btn-stone">"I drink too much. Or I stay busy. Or I scroll. I just can't sit with myself."</a>
+    </div>
+    <p class="who-closing">If any of these sound like you, you're not broken. You're carrying something that hasn't been fully felt yet. That's where we start.</p>
+  </div>
+</section>
+
+<!-- THE NAME -->
+<section class="section name-section">
+  <div class="section-label">The Name</div>
+  <div class="body-text">
+    <p>Provenance is the traced history of where something comes from, what gives it authenticity and value. We chose the name because therapy, at its best, is exactly that. Following the pain back to its origin. Not to stay there, but to finally understand what shaped you, and to discover that the tenderness you've been protecting yourself from is the same tenderness that makes you whole.</p>
+    <p>The name was inspired by a David Whyte poem that stopped us both in our tracks. We won't reproduce his words here; they belong to him. But the image at its center is one we carry into every session: that the things you think make you fragile are actually the things that make you wise. And that the only way forward is through.</p>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="footer-cta-section" id="contact">
+  <h2>Book a Free 20-Minute Consultation</h2>
+  <p>This is the first step. Twenty minutes. No commitment. Just two people talking honestly about whether this work makes sense for you.</p>
+  <a href="contact.html" class="btn-primary">Book a Consultation</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">Provenance Counseling</div>
+  <div class="footer-info">
+    Scott Kalin, LPC · Cate Kalin, LCSW<br>
+    Online therapy for Wisconsin adults
+  </div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="cate.html">Cate Kalin</a>
+    <a href="scott.html">Scott Kalin</a>
+    <a href="services.html">Services</a>
+    <a href="services.html#faq">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 Provenance Counseling. All rights reserved.</div>
+</footer>
+
+<script>
+// Nav scroll behavior
+const nav = document.getElementById('nav');
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+}
+
+// Mobile nav: close on link click and outside tap
+const navLinks = document.querySelector('.nav-links');
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !e.target.closest('.nav-toggle')) {
+      navLinks.classList.remove('open');
+    }
+  });
+}
+</script>
+</body>
+</html>
