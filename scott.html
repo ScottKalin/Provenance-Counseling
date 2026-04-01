@@ -194,12 +194,10 @@ body {
   object-fit: cover; object-position: center center;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  will-change: object-position, filter;
+  will-change: filter;
   filter: brightness(0.9);
-  -webkit-transition: object-position 2s cubic-bezier(0.4, 0, 0.12, 1),
-              filter 1.8s ease;
-  transition: object-position 2s cubic-bezier(0.4, 0, 0.12, 1),
-              filter 1.8s ease;
+  -webkit-transition: filter 1.8s ease;
+  transition: filter 1.8s ease;
 }
 .flying-frame.hidden { display: none; }
 
@@ -528,13 +526,10 @@ function runIntro() {
   var vh = window.innerHeight;
   var isMobile = window.innerWidth < 768;
   frame.style.cssText = 'position:fixed;z-index:200;overflow:hidden;top:0;left:0;width:100vw;height:' + vh + 'px;border-radius:0;border:0px solid transparent;-webkit-transform:translateZ(0);transform:translateZ(0);';
-  frameImg.style.transition = 'none';
-  frameImg.style.webkitTransition = 'none';
   frameImg.style.objectPosition = isMobile ? '30% 35%' : 'center center';
   frameImg.style.filter = 'brightness(0.9)';
   frameImg.style.webkitTransform = 'translateZ(0)';
   frameImg.style.transform = 'translateZ(0)';
-  frame.style.opacity = '1';
   photoBox.classList.remove('show');
   text1.classList.remove('show');
   text2.classList.remove('show');
@@ -543,60 +538,33 @@ function runIntro() {
 
   void frame.offsetHeight;
 
-  if (isMobile) {
-    // MOBILE: simple crossfade — no frame shrink, no panning
-    setTimeout(function() {
-      document.body.style.background = '';
-      frame.style.transition = 'opacity 0.8s ease';
-      frame.style.webkitTransition = 'opacity 0.8s ease';
-      frame.style.opacity = '0';
-    }, 1500);
+  setTimeout(function() {
+    document.body.style.background = '';
+    var target = photoBox.getBoundingClientRect();
+    frame.style.transition = 'top 2s cubic-bezier(0.4,0,0.12,1),left 2s cubic-bezier(0.4,0,0.12,1),width 2s cubic-bezier(0.4,0,0.12,1),height 2s cubic-bezier(0.4,0,0.12,1),border-radius 1.5s ease 0.5s,border 0.5s ease 1.5s';
+    frame.style.webkitTransition = frame.style.transition;
+    frame.style.top = target.top + 'px';
+    frame.style.left = target.left + 'px';
+    frame.style.width = target.width + 'px';
+    frame.style.height = target.height + 'px';
+    frame.style.borderRadius = '6px';
+    frame.style.border = '1px solid rgba(196,148,58,0.25)';
+    frameImg.style.objectPosition = '30% 35%';
+    frameImg.style.filter = 'brightness(1)';
+  }, 1500);
 
-    setTimeout(function() {
-      photoBox.classList.add('show');
-      frame.classList.add('hidden');
-      text1.classList.add('show');
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.top = '';
-    }, 2500);
+  setTimeout(function() {
+    photoBox.classList.add('show');
+    frame.classList.add('hidden');
+    text1.classList.add('show');
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.style.top = '';
+  }, 3700);
 
-    setTimeout(function() { text2.classList.add('show'); }, 2900);
-    setTimeout(function() { nav.classList.add('show'); }, 3000);
-
-  } else {
-    // DESKTOP: cinematic frame-shrink with reframe
-    setTimeout(function() {
-      frameImg.style.transition = '';
-      frameImg.style.webkitTransition = '';
-      document.body.style.background = '';
-      var target = photoBox.getBoundingClientRect();
-      frame.style.transition = 'top 2s cubic-bezier(0.4,0,0.12,1),left 2s cubic-bezier(0.4,0,0.12,1),width 2s cubic-bezier(0.4,0,0.12,1),height 2s cubic-bezier(0.4,0,0.12,1),border-radius 1.5s ease 0.5s,border 0.5s ease 1.5s';
-      frame.style.webkitTransition = frame.style.transition;
-      frame.style.top = target.top + 'px';
-      frame.style.left = target.left + 'px';
-      frame.style.width = target.width + 'px';
-      frame.style.height = target.height + 'px';
-      frame.style.borderRadius = '6px';
-      frame.style.border = '1px solid rgba(196,148,58,0.25)';
-      frameImg.style.objectPosition = '30% 35%';
-      frameImg.style.filter = 'brightness(1)';
-    }, 1500);
-
-    setTimeout(function() {
-      photoBox.classList.add('show');
-      frame.classList.add('hidden');
-      text1.classList.add('show');
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.top = '';
-    }, 3700);
-
-    setTimeout(function() { text2.classList.add('show'); }, 4100);
-    setTimeout(function() { nav.classList.add('show'); }, 4200);
-  }
+  setTimeout(function() { text2.classList.add('show'); }, 4100);
+  setTimeout(function() { nav.classList.add('show'); }, 4200);
 }
 
 runIntro();
