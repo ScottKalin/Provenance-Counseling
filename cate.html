@@ -168,6 +168,9 @@ body {
     width: 260px;
     height: 330px;
   }
+  .therapist-hero-photo img {
+    object-position: 86% 30%;
+  }
 }
 
 /* ═══ FLYING FRAME INTRO ═══ */
@@ -717,8 +720,8 @@ function runIntro() {
   var vh = window.innerHeight;
   var isMobile = window.innerWidth < 768;
   frame.style.cssText = 'position:fixed;z-index:200;overflow:hidden;top:0;left:0;width:100vw;height:' + vh + 'px;border-radius:0;border:0px solid transparent;-webkit-transform:translateZ(0);transform:translateZ(0);';
-  // On mobile portrait, shift toward Cate's face so she's visible in full-screen
-  frameImg.style.objectPosition = isMobile ? '65% center' : 'center center';
+  // On mobile portrait, need 86% to center her face (only 31% of image width visible)
+  frameImg.style.objectPosition = isMobile ? '86% 30%' : 'center center';
   frameImg.style.filter = 'brightness(0.9)';
   frameImg.style.webkitTransform = 'translateZ(0)';
   frameImg.style.transform = 'translateZ(0)';
@@ -741,7 +744,7 @@ function runIntro() {
     frame.style.height = target.height + 'px';
     frame.style.borderRadius = '6px';
     frame.style.border = '1px solid rgba(122,143,122,0.25)';
-    frameImg.style.objectPosition = '78% 30%';
+    frameImg.style.objectPosition = isMobile ? '86% 30%' : '78% 30%';
     frameImg.style.filter = 'brightness(1)';
   }, 2000);
 
