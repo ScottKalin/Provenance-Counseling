@@ -179,7 +179,7 @@ body {
 }
 .flying-frame img {
   width: 100%; height: 100%;
-  object-fit: cover; object-position: center center;
+  object-fit: cover; object-position: 17% 35%;
   will-change: object-position, filter;
   filter: brightness(0.9);
   transition: object-position 2s cubic-bezier(0.4, 0, 0.12, 1),
@@ -197,7 +197,7 @@ body {
 .therapist-hero-photo.show { visibility: visible; }
 
 .therapist-hero-photo img {
-  width: 100%; height: 100%; object-fit: cover; object-position: 28% 35%; border-radius: 6px;
+  width: 100%; height: 100%; object-fit: cover; object-position: 17% 35%; border-radius: 6px;
 }
 
 .hero-text-1 {
@@ -504,7 +504,7 @@ function runIntro() {
 
   frame.className = 'flying-frame';
   frame.style.cssText = 'position:fixed;z-index:200;overflow:hidden;top:0;left:0;width:100vw;height:100vh;border-radius:0;border:0px solid transparent;';
-  frameImg.style.objectPosition = 'center center';
+  frameImg.style.objectPosition = '17% 35%';
   frameImg.style.filter = 'brightness(0.9)';
   photoBox.classList.remove('show');
   text1.classList.remove('show');
@@ -524,7 +524,7 @@ function runIntro() {
     frame.style.height = target.height + 'px';
     frame.style.borderRadius = '6px';
     frame.style.border = '1px solid rgba(196,148,58,0.25)';
-    frameImg.style.objectPosition = '28% 35%';
+    frameImg.style.objectPosition = '17% 35%';
     frameImg.style.filter = 'brightness(1)';
   }, 2000);
 
