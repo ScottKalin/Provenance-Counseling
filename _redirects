@@ -1,0 +1,37 @@
+# Provenance Counseling - Redirects from old Squarespace URLs to new Netlify site
+# Format: old-path  new-path  status-code
+# 301 = permanent redirect (tells Google to update its index)
+
+# Old homepage variants
+/story                              /                  301
+/about                              /                  301
+
+# Old therapist bio pages
+/therapists/scott-kalin             /scott             301
+/therapists/cate-kalin              /cate              301
+/therapists                         /                  301
+
+# Old therapy specialty pages -> new services page
+/therapy/anxiety                    /services          301
+/therapy/depression                 /services          301
+/therapy/trauma                     /services          301
+/therapy/spiritual-counseling       /scott             301
+/therapy/grief                      /services          301
+/therapy/addiction                  /services          301
+/therapy/relationships              /services          301
+/therapy/*                          /services          301
+
+# Old services pages
+/services/individual-counseling     /services          301
+/services/online-therapy            /services          301
+/services/group-therapy             /services          301
+/services/couples-counseling        /services          301
+/services/fees                      /services          301
+/services/*                         /services          301
+
+# Old contact variants
+/contact-us                         /contact           301
+/book                               /contact           301
+/booking                            /contact           301
+/appointment                        /contact           301
+/consultation                       /contact           301
