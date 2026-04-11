@@ -12,17 +12,116 @@
   </url>
   <url>
     <loc>https://provenancecounseling.com/cate.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://provenancecounseling.com/services.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://provenancecounseling.com/contact.html</loc>
     <lastmod>2026-03-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Article Hub Pages -->
+  <url>
+    <loc>https://provenancecounseling.com/articles/hubs/inhibited-grieving.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/hubs/anxiety.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/hubs/addiction.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/hubs/emotional-sensitivity.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Individual Articles -->
+  <url>
+    <loc>https://provenancecounseling.com/articles/inhibited-grieving.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/anger.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/anxiety.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/panic.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/generational-trauma.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/relationships.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/perfectionism.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/eating-disorders.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/addiction.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/ocd.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/adhd.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/depression_4_7.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/loneliness.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/life-transitions.html</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://provenancecounseling.com/articles/spiritual-integration.html</loc>
+    <lastmod>2026-04-11</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
