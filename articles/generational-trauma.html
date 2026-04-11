@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You Didn't Create This. You Inherited It. | Provenance Counseling</title>
+<meta name="description" content="If you've spent years trying to understand why you are the way you are, the answers may not begin with you. They may begin further back, in bodies that are no longer alive.">
+<link rel="canonical" href="https://provenancecounseling.com/articles/generational-trauma.html">
+<meta property="og:title" content="You Didn't Create This. You Inherited It. | Provenance Counseling">
+<meta property="og:description" content="If you've spent years trying to understand why you are the way you are, the answers may not begin with you. They may begin further back, in bodies that are no longer alive.">
+<meta property="og:url" content="https://provenancecounseling.com/articles/generational-trauma.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Provenance Counseling">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --stone: #8A8578; --stone-light: #B8B2A6; --stone-pale: #D4CFC6;
+  --amber: #C4943A; --amber-soft: #D4AD5E;
+  --slate: #4A4F54; --charcoal: #2E3134; --deep: #1E2124;
+  --sage: #7A8F7A; --moss: #5C6E54; --water: #6B7F8A;
+  --linen: #F2EDE4; --cream: #FAF7F2; --warm-white: #FDFCF9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 16px; line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 3rem; display: flex; justify-content: space-between; align-items: center; background: rgba(250,247,242,0.95); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--stone-pale); transition: padding 0.3s ease; }
+.nav-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.2rem; color: var(--charcoal); text-decoration: none; }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; display: inline-block; padding: 0.4rem 0; transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease; }
+.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-cta { color: var(--amber) !important; font-weight: 500; }
+.nav-cta:hover { color: var(--charcoal) !important; font-size: 0.88rem; letter-spacing: 0.08em; }
+.nav-toggle { display: none; cursor: pointer; }
+.nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--charcoal); margin: 5px 0; transition: all 0.3s; }
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .nav-toggle { display: block; z-index: 101; }
+  .nav-links { position: fixed; top: 0; right: -100%; width: 75%; max-width: 320px; height: 100vh; background: var(--cream); flex-direction: column; padding: 5rem 2rem 2rem; gap: 1.5rem; transition: right 0.3s ease; box-shadow: -4px 0 20px rgba(0,0,0,0.08); }
+  .nav-links.open { right: 0; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 0.85rem; }
+}
+.article-hero { padding: 10rem 2rem 3rem; max-width: 720px; margin: 0 auto; border-bottom: 3px solid var(--sage); }
+.article-hero h1 { font-family: 'Cormorant', serif; font-weight: 400; font-size: clamp(2rem, 4.5vw, 2.8rem); color: var(--charcoal); line-height: 1.2; margin-bottom: 1rem; }
+.article-meta { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); }
+.article-meta a { color: var(--moss); text-decoration: none; }
+.article-meta a:hover { color: var(--amber); }
+.article-lede { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--slate); line-height: 1.7; margin-top: 1.5rem; }
+.content-section { max-width: 680px; margin: 0 auto; padding: 3rem 2rem; }
+.content-section h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.6rem; color: var(--charcoal); line-height: 1.25; margin-bottom: 1.25rem; padding-left: 1.25rem; border-left: 3px solid var(--sage); border-left-color: transparent; transition: border-left-color 0.6s ease 0.3s; }
+.content-section p { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.95rem; color: var(--slate); line-height: 1.85; margin-bottom: 1.25rem; }
+.content-section p:last-child { margin-bottom: 0; }
+.content-section em { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.02em; }
+.section-rule { width: 40px; height: 1px; background: var(--sage); margin: 0 auto; transform: scaleX(0); transform-origin: center; transition: transform 0.8s ease; }
+.section-rule.visible { transform: scaleX(1); }
+.pull-quote { max-width: 680px; margin: 2rem auto; padding: 2rem 2.5rem; border-left: 4px solid var(--sage); background: linear-gradient(135deg, rgba(122,143,122,0.08) 0%, rgba(107,127,138,0.05) 100%); border-radius: 0 4px 4px 0; }
+.pull-quote p { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.3rem; color: var(--charcoal); line-height: 1.5; font-style: italic; margin: 0; }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.pull-quote.reveal { opacity: 0; transform: translateX(-30px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.pull-quote.reveal.visible { opacity: 1; transform: translateX(0); }
+.reveal.visible h2 { border-left-color: var(--sage); }
+.page-cta { padding: 5rem 2rem; text-align: center; background: linear-gradient(175deg, rgba(122,143,122,0.08) 0%, rgba(196,148,58,0.06) 100%); opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.page-cta.visible { opacity: 1; transform: translateY(0); }
+.page-cta h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--charcoal); margin-bottom: 1rem; }
+.page-cta p { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1rem; color: var(--stone); max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+.btn-primary { display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); background: var(--charcoal); padding: 1rem 2.5rem; border-radius: 3px; text-decoration: none; transition: all 0.3s; }
+.btn-primary:hover { background: var(--amber); color: var(--deep); }
+.back-link { max-width: 680px; margin: 0 auto; padding: 2rem 2rem 0; }
+.back-link a { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.3s; }
+.back-link a:hover { color: var(--moss); }
+.footer { background: var(--deep); padding: 3rem 2rem; text-align: center; opacity: 0; transition: opacity 0.6s ease; }
+.footer.visible { opacity: 1; }
+.footer-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.1rem; color: var(--stone); margin-bottom: 0.5rem; }
+.footer-info { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.72rem; color: var(--slate); line-height: 1.8; }
+.footer-links { margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.footer-links a { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--amber); }
+.footer-copy { margin-top: 2rem; font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.65rem; color: var(--slate); }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="nav-brand">Provenance Counseling</a>
+  <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/">About</a></li>
+    <li><a href="/scott.html">Scott Kalin</a></li>
+    <li><a href="/cate.html">Cate Kalin</a></li>
+    <li><a href="/services.html">Services</a></li>
+    <li><a href="/services.html#faq">FAQ</a></li>
+    <li><a href="/contact.html" class="nav-cta">Book a Consultation</a></li>
+  </ul>
+</nav>
+<header class="article-hero">
+  <h1>You Didn't Create This. You Inherited It.</h1>
+  <div class="article-meta">By <a href="/scott.html">Scott Kalin, LPC &amp; Cate Kalin, LCSW</a></div>
+  <p class="article-lede">There is a particular kind of suffering that is very difficult to explain. It is the anxiety that has no clear origin. The grief that arrives without a story to attach to.</p>
+</header>
+
+<section class="content-section reveal">
+  <p>The way certain situations, a raised voice, a sudden silence, the feeling of being watched or evaluated, land in the body with a weight that seems wildly disproportionate to what's actually happening. The patterns that repeat across generations without anyone choosing them.</p>
+  <p>If you have spent years trying to understand why you are the way you are, tracing your patterns back to your childhood and finding only partial answers, it may be because the answers don't begin with you. They don't even begin with your parents.</p>
+  <p>They begin further back than that. In bodies that are no longer alive. In experiences that were never processed. In pain that had nowhere to go and so went somewhere else instead: forward, into the nervous systems of everyone who came after.</p>
+  <p>This is generational trauma. And understanding it may be the most exonerating thing you ever do.</p>
+</section>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>What the Science Actually Shows</h2>
+  <p>In 2013, researchers Brian Dias and Kerry Ressler at Emory University conducted a study that changed everything we thought we knew about trauma and inheritance.</p>
+  <p>They exposed mice to the scent of cherry blossoms while simultaneously delivering an electric shock. The mice learned to fear the smell. What happened next was not straightforward at all.</p>
+  <p>The offspring of those mice, who had never been shocked, who had never been exposed to the original conditioning, flinched at the smell of cherry blossoms. As did their offspring. For multiple generations, the fear response persisted in their nervous systems, encoded not in memory but in biology. In the very structure of their DNA.</p>
+  <p>Trauma does not stay with the person who experienced it. It edits the genome. It rewires the nervous system at a molecular level and passes that rewiring forward to children and grandchildren who inherit not just eye color and bone structure but physiological responses to experiences they never had.</p>
+  <p>This is not metaphor. This is molecular biology. Your body may be responding to something your grandmother survived as though you yourself are living through it. Because in a very real biological sense, part of you is.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"This is not metaphor. This is molecular biology."</p>
+</div>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>The Weight We Inherit</h2>
+  <p>Consider what your grandparents or great-grandparents may have lived through. The Holocaust. Centuries of slavery in America. The Great Famine in Ireland. Mass immigrations that required people to sever themselves from everything familiar. Domestic violence that moved quietly through families for generations. The alcoholism that was the village's shared secret. The early deaths, the children lost, the griefs that were swallowed because there was no time to feel them.</p>
+  <p>These people did not have your access and opportunities. Now we have a language for trauma, therapy, permission to be vulnerable, and a culture that recognizes emotional processing as strength. They had survival. They had endurance. They had, in many cases, extraordinary resilience.</p>
+  <p>And they had unprocessed pain. Pain that went somewhere, because pain always goes somewhere.</p>
+  <p>It went into their bodies. Into their silences. Into the emotional atmosphere of the homes they built and the families they raised. Into you.</p>
+</section>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>The Body Keeps the Score and Passes It Forward</h2>
+  <p>The somatic therapist Resmaa Menakem makes an argument that stops most readers in their tracks: trauma lives in the body before it lives in the mind. It is not primarily a story. It is a contraction. A bracing. A held breath, a clenched jaw, a tightness across the shoulders that has been there so long it registers as normal.</p>
+  <p>And it moves forward somatically, not just through genes but through the body-to-body transmission of nervous system states. A mother who could not settle passed her unsettled nervous system to her infant. A father whose anger was always just beneath the surface taught his children's bodies, without a word, to brace for impact.</p>
+  <p>Emotion, when it is allowed to move through the body, flows. It has a beginning, a middle, and an end. The body that can feel its emotions fully is supple, adaptable, present.</p>
+  <p>Emotion that cannot move contracts. It settles into the tissue. The jaw clenches and stays clenched. The shoulders rise and forget to come down. The breath becomes shallow and stays shallow.</p>
+  <p>This is what intergenerational trauma looks like in a body. Not always dramatic. Not always traceable to a single event. Often just a chronic quality of bracing, of holding, of a body that has never fully felt safe enough to soften.</p>
+</section>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>The Context You Were Never Given</h2>
+  <p>One of the most disorienting aspects of carrying generational trauma is the absence of context.</p>
+  <p>You have a response, a fear, a grief, a rage, a shutdown, that feels real and urgent. But when you search for the memory that should explain it, you find nothing. Or you find something that seems too small to account for the size of what you're feeling. And so the shame arrives: why am I like this? Nothing that bad happened to me.</p>
+  <p>Nothing is wrong with you. You are carrying something real. You simply weren't given the story that goes with it, because the story belongs to someone who came before you, someone who couldn't tell it.</p>
+  <p>You don't need the full story to grieve it. Sometimes the grief itself is the story.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"You don't need the full story to grieve it. Sometimes the grief itself is the story."</p>
+</div>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>You Are the Generation That Gets to Stop It</h2>
+  <p>Here is what we believe, and what the science supports:</p>
+  <p>What you metabolize does not get passed forward.</p>
+  <p>The emotional work you do, the grief you allow to move, the shame you bring into the light, the fear you finally stay with long enough to complete, that work does not just heal you. It changes what your children and grandchildren inherit. It edits the transmission. It interrupts a cycle that may have been running for generations before you arrived.</p>
+  <p>And we believe something beyond what the science can yet measure: that this healing moves backward as well as forward. That when you finally feel what your grandmother couldn't, when you grieve the loss she swallowed, when you complete the cycle she never had the tools to finish, something in that lineage resolves.</p>
+  <p>You did not only inherit their wounds. You inherited their wisdom. Their strength. Their capacity to survive the unsurvivable and still, somehow, love.</p>
+  <p>Generational trauma and generational resilience travel together. They live in the same bodies, move through the same blood. The work of healing is not about discarding what came before. It is about metabolizing the pain so that the strength, which was always there, finally has room to breathe.</p>
+  <p>Therapy, seen through this lens, is not self-indulgence. It is intergenerational repair. It is the decision, made by one person, in one lifetime, to be the place where the pain finally stops moving and finally gets felt.</p>
+  <p>That is not a small thing. That may be one of the most important things a human being can do.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"What you metabolize does not get passed forward."</p>
+</div>
+
+<section class="page-cta">
+  <h2>Book a Free 20-Minute Consultation</h2>
+  <p>If you recognize yourself here, we'd love to talk.</p>
+  <a href="/contact.html" class="btn-primary">Book a Consultation</a>
+</section>
+<div class="back-link">
+  <a href="/services.html">&larr; Back to Services</a>
+</div>
+<footer class="footer">
+  <div class="footer-brand">Provenance Counseling</div>
+  <div class="footer-info">Scott Kalin, LPC &middot; Cate Kalin, LCSW<br>Online therapy for Wisconsin adults</div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/scott.html">Scott Kalin</a>
+    <a href="/cate.html">Cate Kalin</a>
+    <a href="/services.html">Services</a>
+    <a href="/services.html#faq">FAQ</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Provenance Counseling. All rights reserved.</div>
+</footer>
+<script>
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .section-rule, .page-cta, .footer').forEach(function(el) { observer.observe(el); });
+var navLinks = document.querySelector('.nav-links');
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() { navLinks.classList.remove('open'); });
+  });
+  document.addEventListener('click', function(e) {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !e.target.closest('.nav-toggle')) {
+      navLinks.classList.remove('open');
+    }
+  });
+}
+</script>
+</body>
+</html>

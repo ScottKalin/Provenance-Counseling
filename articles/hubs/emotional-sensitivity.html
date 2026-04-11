@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emotional Sensitivity and Self-Worth | Provenance Counseling</title>
+<meta name="description" content="Perfectionism and eating disorders are what high-sensitivity often becomes when the surrounding culture treats sensitivity as a problem to manage rather than an instrument to refine.">
+<link rel="canonical" href="https://provenancecounseling.com/articles/hubs/emotional-sensitivity.html">
+<meta property="og:title" content="Emotional Sensitivity and Self-Worth | Provenance Counseling">
+<meta property="og:description" content="Perfectionism and eating disorders are what high-sensitivity often becomes when the surrounding culture treats sensitivity as a problem to manage rather than an instrument to refine.">
+<meta property="og:url" content="https://provenancecounseling.com/articles/hubs/emotional-sensitivity.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Provenance Counseling">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --stone: #8A8578; --stone-light: #B8B2A6; --stone-pale: #D4CFC6;
+  --amber: #C4943A; --amber-soft: #D4AD5E;
+  --slate: #4A4F54; --charcoal: #2E3134; --deep: #1E2124;
+  --sage: #7A8F7A; --moss: #5C6E54; --water: #6B7F8A;
+  --linen: #F2EDE4; --cream: #FAF7F2; --warm-white: #FDFCF9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 16px; line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 3rem; display: flex; justify-content: space-between; align-items: center; background: rgba(250,247,242,0.95); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--stone-pale); transition: padding 0.3s ease; }
+.nav-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.2rem; color: var(--charcoal); text-decoration: none; }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; display: inline-block; padding: 0.4rem 0; transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease; }
+.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-cta { color: var(--amber) !important; font-weight: 500; }
+.nav-cta:hover { color: var(--charcoal) !important; font-size: 0.88rem; letter-spacing: 0.08em; }
+.nav-toggle { display: none; cursor: pointer; }
+.nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--charcoal); margin: 5px 0; transition: all 0.3s; }
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .nav-toggle { display: block; z-index: 101; }
+  .nav-links { position: fixed; top: 0; right: -100%; width: 75%; max-width: 320px; height: 100vh; background: var(--cream); flex-direction: column; padding: 5rem 2rem 2rem; gap: 1.5rem; transition: right 0.3s ease; box-shadow: -4px 0 20px rgba(0,0,0,0.08); }
+  .nav-links.open { right: 0; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 0.85rem; }
+}
+.article-hero { padding: 10rem 2rem 3rem; max-width: 720px; margin: 0 auto; border-bottom: 3px solid var(--sage); }
+.article-hero h1 { font-family: 'Cormorant', serif; font-weight: 400; font-size: clamp(2rem, 4.5vw, 2.8rem); color: var(--charcoal); line-height: 1.2; margin-bottom: 1rem; }
+.article-meta { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); }
+.article-meta a { color: var(--moss); text-decoration: none; }
+.article-meta a:hover { color: var(--amber); }
+.article-lede { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.1rem; color: var(--slate); line-height: 1.7; margin-top: 1.5rem; }
+.content-section { max-width: 680px; margin: 0 auto; padding: 3rem 2rem; }
+.content-section h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.6rem; color: var(--charcoal); line-height: 1.25; margin-bottom: 1.25rem; padding-left: 1.25rem; border-left: 3px solid var(--sage); border-left-color: transparent; transition: border-left-color 0.6s ease 0.3s; }
+.content-section p { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.95rem; color: var(--slate); line-height: 1.85; margin-bottom: 1.25rem; }
+.content-section p:last-child { margin-bottom: 0; }
+.content-section em { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.02em; }
+.section-rule { width: 40px; height: 1px; background: var(--sage); margin: 0 auto; transform: scaleX(0); transform-origin: center; transition: transform 0.8s ease; }
+.section-rule.visible { transform: scaleX(1); }
+.pull-quote { max-width: 680px; margin: 2rem auto; padding: 2rem 2.5rem; border-left: 4px solid var(--sage); background: linear-gradient(135deg, rgba(122,143,122,0.08) 0%, rgba(107,127,138,0.05) 100%); border-radius: 0 4px 4px 0; }
+.pull-quote p { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.3rem; color: var(--charcoal); line-height: 1.5; font-style: italic; margin: 0; }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.pull-quote.reveal { opacity: 0; transform: translateX(-30px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.pull-quote.reveal.visible { opacity: 1; transform: translateX(0); }
+.reveal.visible h2 { border-left-color: var(--sage); }
+.page-cta { padding: 5rem 2rem; text-align: center; background: linear-gradient(175deg, rgba(122,143,122,0.08) 0%, rgba(196,148,58,0.06) 100%); opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.page-cta.visible { opacity: 1; transform: translateY(0); }
+.page-cta h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--charcoal); margin-bottom: 1rem; }
+.page-cta p { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1rem; color: var(--stone); max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
+.btn-primary { display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); background: var(--charcoal); padding: 1rem 2.5rem; border-radius: 3px; text-decoration: none; transition: all 0.3s; }
+.btn-primary:hover { background: var(--amber); color: var(--deep); }
+.back-link { max-width: 680px; margin: 0 auto; padding: 2rem 2rem 0; }
+.back-link a { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.3s; }
+.back-link a:hover { color: var(--moss); }
+.footer { background: var(--deep); padding: 3rem 2rem; text-align: center; opacity: 0; transition: opacity 0.6s ease; }
+.footer.visible { opacity: 1; }
+.footer-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.1rem; color: var(--stone); margin-bottom: 0.5rem; }
+.footer-info { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.72rem; color: var(--slate); line-height: 1.8; }
+.footer-links { margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.footer-links a { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--amber); }
+.footer-copy { margin-top: 2rem; font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.65rem; color: var(--slate); }
+/* Hub-specific */
+.hub-toc { position: sticky; top: 4.5rem; z-index: 90; background: rgba(250,247,242,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid var(--stone-pale); padding: 0.75rem 2rem; }
+.hub-toc-list { list-style: none; display: flex; gap: 2.5rem; max-width: 680px; margin: 0 auto; flex-wrap: wrap; }
+.hub-toc-list a { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; padding: 0.25rem 0; }
+.hub-toc-list a:hover { color: var(--amber); }
+@media (max-width: 768px) { .hub-toc { position: static; } .hub-toc-list { gap: 1.5rem; } }
+.hub-article-header { max-width: 720px; margin: 0 auto; padding: 4rem 2rem 2rem; border-bottom: 3px solid var(--sage); }
+.hub-article-header h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: clamp(1.6rem, 3.5vw, 2.2rem); color: var(--charcoal); line-height: 1.2; padding-left: 0; border-left: none; margin-bottom: 0.5rem; }
+.hub-article-header .hub-article-lede { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1rem; color: var(--slate); line-height: 1.7; margin-top: 0.75rem; }
+.hub-divider { max-width: 720px; margin: 3rem auto 0; height: 1px; background: var(--stone-pale); }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/" class="nav-brand">Provenance Counseling</a>
+  <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/">About</a></li>
+    <li><a href="/scott.html">Scott Kalin</a></li>
+    <li><a href="/cate.html">Cate Kalin</a></li>
+    <li><a href="/services.html">Services</a></li>
+    <li><a href="/services.html#faq">FAQ</a></li>
+    <li><a href="/contact.html" class="nav-cta">Book a Consultation</a></li>
+  </ul>
+</nav>
+<header class="article-hero">
+  <h1>Emotional Sensitivity and Self-Worth</h1>
+  <div class="article-meta">By <a href="/scott.html">Scott Kalin, LPC &amp; Cate Kalin, LCSW</a></div>
+  <p class="article-lede">Perfectionism and eating disorders are what high-sensitivity often becomes when the surrounding culture treats sensitivity as a problem to manage rather than an instrument to refine — two different attempts to make an intense inner life safe enough to live in.</p>
+</header>
+
+<nav class="hub-toc" aria-label="Table of contents">
+  <ul class="hub-toc-list">
+    <li><a href="#perfectionism">Perfectionism</a></li>
+    <li><a href="#eating-disorders">Eating Disorders</a></li>
+  </ul>
+</nav>
+
+<!-- ARTICLE 1: PERFECTIONISM -->
+<div id="perfectionism">
+  <div class="hub-article-header">
+    <h2>Perfectionism</h2>
+    <p class="hub-article-lede">Perfectionism Isn't About High Standards. It's About Grief.</p>
+  </div>
+
+<section class="content-section reveal">
+  <p>Everyone assumes perfectionists are afraid of failure. That's not quite right. Perfectionists are afraid of what failure means.</p>
+  <p>That they are not enough. That if they slip, if they disappoint, if they show the unpolished version of themselves, something irreversible will happen. Someone will leave. Someone will stop loving them. The fragile arrangement that has kept them safe will come apart.</p>
+  <p>Perfectionism isn't a personality trait. It's a survival strategy. And like most survival strategies built in childhood, it works until it doesn't.</p>
+</section>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>What Perfectionism Is Protecting</h2>
+  <p>Most perfectionists grew up in environments where love, approval, or safety felt conditional. Not always dramatically so. Sometimes it was subtle: a parent who lit up at achievement and went quiet at struggle. A household where emotions were managed rather than felt. A family system where being the capable one was the role you filled, and filling it kept things stable.</p>
+  <p>In those environments, children learn something essential: who I am is not enough, but what I do might be. And so they do. More, better, faster, cleaner, harder. They become exceptional at performing competence while quietly terrified underneath.</p>
+  <p>The grief that gets buried here is enormous. The grief of never being fully seen. Of working so hard for connection and still feeling alone inside it. Of losing, over and over, the version of yourself that just wanted to rest, to be loved without earning it first.</p>
+  <p>That grief doesn't disappear. It goes underground. And perfectionism is one of the primary ways it stays there.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"Who I am is not enough, but what I do might be."</p>
+</div>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>Where the Cycle Gets Stuck</h2>
+  <p>The natural grieving cycle moves through layers, each separated by fear of what comes next. Numbness and denial give way to shame, shame to anger, anger to sadness, sadness to emptiness and loneliness, emptiness to relief, and relief to sovereignty — a return to groundedness, to the self. But when any emotion in that cycle was unsafe to feel growing up, the body learns to route around it.</p>
+  <p>For perfectionists, the blocked emotion is almost always shame.</p>
+  <p>Shame is the feeling that I am the problem, not what I did, but who I am. For a child who learned that their worth depended on performance, shame became intolerable. So the psyche found a solution: if I never fail, I never have to feel it. If I control everything tightly enough, the shame stays locked away.</p>
+  <p>But locked shame doesn't stay still. It generates anxiety, the constant hum of not enough, not yet, not quite. It drives the next achievement and the next, never landing anywhere that feels like rest. And it keeps the grief cycle frozen. Because to grieve, to feel the sadness of what was lost, the anger at what was asked of you, the emptiness and loneliness of the unlived self, you have to be willing to stop performing long enough to feel it.</p>
+  <p>Perfectionists rarely stop.</p>
+</section>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>What It Looks Like in the Room</h2>
+  <p>Perfectionist clients often come in highly articulate about their patterns. They've already read the books. They know their childhood shaped them. They can explain their attachment style with clinical precision.</p>
+  <p>And yet nothing changes.</p>
+  <p>That's because understanding perfectionism doesn't grieve it. The mind can hold a concept and the body can still be running a thirty-year-old emergency. The work isn't to understand the pattern more clearly. It's to feel what the pattern was built to avoid.</p>
+  <p>In sessions, this often looks like slowing down the moment when the client pivots away from vulnerability into analysis. The jaw tightens. The breath gets shallow. They move from something real into something smart. That pivot is the grief stopping. That's where we go.</p>
+  <p>When a perfectionist can stay, can let the shame surface without immediately defending against it, can feel the anger at having had to be so much for so long, can grieve the childhood where rest was never safe, something loosens. Not the standards, necessarily. But the white-knuckling. The compulsive quality. The way the inner critic never quite turns off.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"Understanding perfectionism doesn't grieve it. The mind can hold a concept and the body can still be running a thirty-year-old emergency."</p>
+</div>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>The Grief Beneath the Striving</h2>
+  <p>Here is what we have learned, sitting with perfectionists in their most honest moments:</p>
+  <p>Underneath the relentless drive is a child who worked very hard to be loved and is still waiting to find out if it was enough.</p>
+  <p>That child doesn't need another achievement. They need someone to sit with them in the exhaustion of all that striving and say: you didn't have to earn it. You never did.</p>
+  <p>That's grief. The grief of what was asked. The grief of what was lost. The grief of the self that got left behind in the effort to become acceptable.</p>
+  <p>And on the other side of that grief, not after one session, not cleanly or linearly, but through the actual felt experience of it, is something perfectionists rarely believe is available to them:</p>
+  <p>Rest. Genuine rest. Not the rest you have to earn at the end of a productive day. The rest of a person who has finally stopped running from themselves.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"Underneath the relentless drive is a child who worked very hard to be loved and is still waiting to find out if it was enough."</p>
+</div>
+</div>
+
+<div class="hub-divider"></div>
+
+<!-- ARTICLE 2: EATING DISORDERS -->
+<div id="eating-disorders">
+  <div class="hub-article-header">
+    <h2>Eating Disorders</h2>
+    <p class="hub-article-lede">Eating Disorders Aren't About Food. They're About What Food Is Holding in Place.</p>
+  </div>
+
+<section class="content-section reveal">
+  <p>Most people think of eating disorders as a problem with food. With weight, with body image, with control. And on the surface, that's what it looks like.</p>
+  <p>But underneath the restriction, the bingeing, the purging, the obsessive calorie counting, the body checking, the rules and rituals that organize every meal into a negotiation with shame, something else is happening entirely.</p>
+  <p>An eating disorder is an addictive pattern of behavior that does something very specific: it decreases emotional availability and emotional vulnerability while giving temporary relief to somatic pain and loss. It is, in this way, identical to every other addictive process. The substance just happens to be the relationship with food and the body.</p>
+  <p>And like every addiction, it works. Until it doesn't.</p>
+</section>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>What Restriction Is Actually Doing</h2>
+  <p>Restriction mimics emotional restriction. This is not a metaphor. It is a somatic parallel that the body understands before the mind does.</p>
+  <p>When a person restricts food, the body enters a state of controlled deprivation. Hunger signals get overridden. The nervous system narrows its focus. There is a quiet clarity that comes with not eating, a sharpness, a sense of control that feels like mastery in a life that may otherwise feel chaotic and unmanageable.</p>
+  <p>That clarity is the absence of emotional noise. When the body is focused on survival, it doesn't have the resources to feel. The grief quiets. The shame recedes. The loneliness that lives in the chest gets replaced by the hollow, manageable emptiness of hunger, which at least has a clear cause and a clear solution.</p>
+  <p>Restriction is avoidance wearing the disguise of discipline. And for a person whose emotional life was never safe to fully inhabit, who learned early that vulnerability was dangerous and needs were burdensome, restriction can feel like the most logical strategy in the world.</p>
+  <p>The grief that gets buried underneath restriction is the grief of a self that was never allowed to need. To want. To take up space.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"Restriction is avoidance wearing the disguise of discipline."</p>
+</div>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>What Bingeing and Purging Are Actually Doing</h2>
+  <p>If restriction mimics emotional avoidance, bingeing and purging mirror the cycle of emotional overflow and collapse.</p>
+  <p>The binge is the eruption. The emotions that have been held down, managed, controlled, restricted, finally break through. Not as feelings, not as tears or words or honest conversation, but as the only form of release the person has found: consumption. Taking in everything, fast, urgently, past the point of comfort, past the point of awareness, into a numb, dissociated fullness.</p>
+  <p>The purge is the correction. The shame that arrives immediately after. The desperate need to undo, to get it out, to return to the controlled state. This mirrors exactly what happens when someone who has been emotionally restricted finally explodes at their partner and then immediately apologizes, minimizes, takes it back, tries to pretend it didn't happen.</p>
+  <p>Binge and purge is the grief cycle starting and stopping, over and over, in the body. The emotion tries to move. The shame catches it. The system resets. Nothing gets resolved.</p>
+  <p>The person is not choosing this. The nervous system is doing the only thing it was ever taught to do with overwhelming feeling: get it out, then get it under control.</p>
+</section>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>The Thought Obsessions That Remain</h2>
+  <p>Many of the clients we work with around eating disorders are not in the acute phase. They have learned, often through years of effort, to control the external behaviors. They eat. They don't purge. They maintain a weight that looks healthy from the outside.</p>
+  <p>But the internal landscape hasn't changed.</p>
+  <p>The obsessive thoughts about food, weight, and body remain. The negative self-worth that drove the disorder in the first place is still running underneath every meal, every mirror, every outfit chosen or rejected. The calorie counting may have stopped externally but it continues internally, a background hum of measurement and judgment that never quite turns off.</p>
+  <p>This is because the eating disorder was never really about the food. The food behaviors were the symptom. The driver was inhibited grieving, the inability to be emotionally vulnerable, the terror of being fully seen, the deep belief that who you are without the control is not someone worth loving.</p>
+  <p>Until that underlying grief is felt and processed, the internal obsessions persist even when the external behaviors are managed. This is why behavioral approaches alone, while necessary for stabilization, are not sufficient for resolution.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"The eating disorder was never about the food. The food behaviors were the symptom. The driver was inhibited grieving."</p>
+</div>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>Perfectionism, Control, and the Fear of Being Seen</h2>
+  <p>Eating disorders and perfectionism are deeply entangled, and the connection runs through the same root: the belief that who I am is not enough, but what I do, how I look, how much space I take up, might be.</p>
+  <p>Control of food becomes a proxy for control of the self. If I can master this, if I can maintain this discipline, then I am safe. The eating disorder gives the person a sense of agency in a world where their emotional experience feels ungovernable.</p>
+  <p>But the control is a trap. Because the more tightly the person controls their relationship with food and their body, the less available they become for genuine emotional connection. You cannot be truly intimate with someone while running a parallel conversation in your head about what you ate today and whether you deserve to rest tonight.</p>
+  <p>The eating disorder narrows the world. It replaces the full, messy, vulnerable range of human experience with a single, manageable question: did I eat correctly today? And that question, however painful, is infinitely less frightening than the questions it's replacing: am I lovable? Can I survive being seen? What happens if I stop performing and let someone know who I actually am?</p>
+  <p>The fear at the center of most eating disorders is the same fear at the center of most human suffering: the fear of being emotionally close to the people you care about. Because closeness requires vulnerability. And vulnerability requires letting go of control.</p>
+</section>
+
+<div class="pull-quote reveal">
+  <p>"Control of food becomes a proxy for control of the self."</p>
+</div>
+
+<div class="section-rule"></div>
+
+<section class="content-section reveal">
+  <h2>What the Work Looks Like</h2>
+  <p>We work with eating disorders at the level of what the disorder is protecting, not just what it looks like on the surface.</p>
+  <p>This means working with the grief. The grief of a body that was never allowed to simply be. The grief of years spent at war with hunger, with pleasure, with the basic human need to eat and enjoy eating. The grief of the relationships that were thinned by the disorder, the intimacy that was avoided, the life that was organized around a set of rules that promised safety but delivered isolation.</p>
+  <p>It means working with the shame. The deep, body-level belief that there is something wrong with you that can only be managed, never resolved. The shame that whispers you are too much and not enough in the same breath.</p>
+  <p>It means building the capacity for emotional vulnerability that the disorder has been preventing. Learning to feel without restricting the feeling. Learning to need without punishing yourself for needing. Learning to sit with the discomfort of being seen by someone who is paying attention.</p>
+  <p>The natural grieving cycle, when it is allowed to move, does what it was always designed to do. The numbness gives way to shame, shame to anger, anger to sadness, sadness to emptiness and loneliness, and finally relief. But for someone with an eating disorder, every transition in that cycle triggers the urge to control, to restrict, to purge the feeling before it reaches its full depth.</p>
+  <p>The work is learning to stay. To let the cycle complete. To discover that the feelings will not destroy you, even though every fiber of the disorder insists they will.</p>
+  <p>On the other side of that work is not a perfect relationship with food. It is a person who no longer needs the disorder to survive their own inner life.</p>
+</section>
+</div>
+
+<section class="page-cta">
+  <h2>Book a Free 20-Minute Consultation</h2>
+  <p>If you recognize yourself here, we'd love to talk.</p>
+  <a href="/contact.html" class="btn-primary">Book a free consultation</a>
+</section>
+<div class="back-link">
+  <a href="/services.html">&larr; Back to Services</a>
+</div>
+<footer class="footer">
+  <div class="footer-brand">Provenance Counseling</div>
+  <div class="footer-info">Scott Kalin, LPC &middot; Cate Kalin, LCSW<br>Online therapy for Wisconsin adults</div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/scott.html">Scott Kalin</a>
+    <a href="/cate.html">Cate Kalin</a>
+    <a href="/services.html">Services</a>
+    <a href="/services.html#faq">FAQ</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Provenance Counseling. All rights reserved.</div>
+</footer>
+<script>
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .section-rule, .page-cta, .footer').forEach(function(el) { observer.observe(el); });
+var navLinks = document.querySelector('.nav-links');
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() { navLinks.classList.remove('open'); });
+  });
+  document.addEventListener('click', function(e) {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !e.target.closest('.nav-toggle')) {
+      navLinks.classList.remove('open');
+    }
+  });
+}
+</script>
+</body>
+</html>
