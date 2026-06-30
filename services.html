@@ -79,7 +79,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 16px; line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 20px; line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.25rem 3rem; display: flex; justify-content: space-between; align-items: center; background: rgba(250,247,242,0.95); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--stone-pale); }
 .nav-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.2rem; color: var(--charcoal); text-decoration: none; }
@@ -87,7 +87,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 .nav-links a {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  font-size: 0.78rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--stone);
@@ -97,8 +97,8 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
   transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
 }
 
-.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 0.88rem; letter-spacing: 0.06em; }
-.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 1.25rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 1.25rem; letter-spacing: 0.06em; }
 
 .nav-cta {
   color: var(--amber) !important;
@@ -106,7 +106,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 }
 .nav-cta:hover {
   color: var(--charcoal) !important;
-  font-size: 0.88rem;
+  font-size: 1.25rem;
   letter-spacing: 0.08em;
 }
 .nav-cta:hover::before {
@@ -119,20 +119,20 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
   .nav-toggle { display: block; z-index: 101; }
   .nav-links { position: fixed; top: 0; right: -100%; width: 75%; max-width: 320px; height: 100vh; background: var(--cream); flex-direction: column; padding: 5rem 2rem 2rem; gap: 1.5rem; transition: right 0.3s; box-shadow: -4px 0 20px rgba(0,0,0,0.08); }
   .nav-links.open { right: 0; }
-  .nav-links a { color: var(--charcoal) !important; font-size: 0.85rem; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 1rem; }
 }
 
 /* PAGE HERO */
 .page-hero {
   padding: 10rem 2rem 4rem;
   text-align: center;
-  max-width: 680px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
 .page-hero h1 {
   font-family: 'Cormorant', serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(2rem, 4.5vw, 3rem);
   color: var(--charcoal);
   line-height: 1.2;
@@ -141,18 +141,18 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 
 .page-hero p {
   font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 0.95rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   color: var(--stone);
   line-height: 1.8;
 }
 
 /* CONTENT */
-.content-section { max-width: 680px; margin: 0 auto; padding: 4rem 2rem; }
+.content-section { max-width: 780px; margin: 0 auto; padding: 4rem 2rem; }
 .content-section h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.8rem; color: var(--charcoal); line-height: 1.25; margin-bottom: 1.5rem; }
-.content-section h3 { font-family: 'Lora', serif; font-weight: 500; font-size: 1.05rem; color: var(--charcoal); margin-bottom: 0.5rem; margin-top: 2rem; }
+.content-section h3 { font-family: 'Lora', serif; font-weight: 500; font-size: 1.25rem; color: var(--charcoal); margin-bottom: 0.5rem; margin-top: 2rem; }
 .content-section h3:first-of-type { margin-top: 0; }
-.content-section p { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.95rem; color: var(--slate); line-height: 1.85; margin-bottom: 1.25rem; }
+.content-section p { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 1.25rem; color: var(--slate); line-height: 1.85; margin-bottom: 1.25rem; }
 .content-section p:last-child { margin-bottom: 0; }
 
 .section-rule { width: 40px; height: 1px; background: var(--amber); margin: 0 auto; }
@@ -186,7 +186,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 .specialty-card-cta {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  font-size: 0.65rem;
+  font-size: 0.875rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--amber);
@@ -205,7 +205,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 .specialty-tag {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  font-size: 0.62rem;
+  font-size: 0.875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 0.2rem 0.5rem;
@@ -224,15 +224,15 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 .specialty-title {
   font-family: 'Lora', serif;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   color: var(--charcoal);
   margin-bottom: 0.5rem;
 }
 
 .specialty-desc {
   font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 0.85rem;
+  font-weight: 400;
+  font-size: 1rem;
   color: var(--slate);
   line-height: 1.7;
 }
@@ -252,7 +252,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 .step-title {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--charcoal);
@@ -261,8 +261,8 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 
 .step-desc {
   font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 0.82rem;
+  font-weight: 400;
+  font-size: 1rem;
   color: var(--stone);
   line-height: 1.7;
 }
@@ -288,8 +288,8 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 
 .fees-note {
   font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 0.82rem;
+  font-weight: 400;
+  font-size: 1rem;
   color: var(--stone);
   line-height: 1.7;
 }
@@ -317,7 +317,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 
 @media (max-width: 640px) {
   .faq-question {
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     min-height: 48px;
     padding: 0.35rem 0;
   }
@@ -329,7 +329,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 .faq-question::after {
   content: '+';
   font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.4rem;
   color: var(--amber);
   flex-shrink: 0;
@@ -347,8 +347,8 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 
 .faq-answer {
   font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 1.25rem;
   color: var(--slate);
   line-height: 1.8;
   max-height: 0;
@@ -374,7 +374,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
   gap: 0.5rem;
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  font-size: 0.72rem;
+  font-size: 0.875rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -390,17 +390,17 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 .availability.limited { color: var(--amber); }
 .availability.limited::before { background: var(--amber); }
 .cta-availability { margin-bottom: 1.25rem; }
-.btn-primary { display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); background: var(--charcoal); padding: 1rem 2.5rem; border-radius: 3px; text-decoration: none; transition: all 0.3s; }
+.btn-primary { display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 1rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); background: var(--charcoal); padding: 1rem 2.5rem; border-radius: 3px; text-decoration: none; transition: all 0.3s; }
 .btn-primary:hover { background: var(--amber); color: var(--deep); }
 
 /* FOOTER */
 .footer { background: var(--deep); padding: 3rem 2rem; text-align: center; }
-.footer-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.1rem; color: var(--stone); margin-bottom: 0.5rem; }
-.footer-info { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.72rem; color: var(--slate); line-height: 1.8; }
+.footer-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.25rem; color: var(--stone); margin-bottom: 0.5rem; }
+.footer-info { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; color: var(--slate); line-height: 1.8; }
 .footer-links { margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-.footer-links a { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
+.footer-links a { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .footer-links a:hover { color: var(--amber); }
-.footer-copy { margin-top: 2rem; font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.65rem; color: var(--slate); }
+.footer-copy { margin-top: 2rem; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; color: var(--slate); }
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -473,7 +473,7 @@ body { background: var(--cream); color: var(--charcoal); font-family: 'DM Sans',
 
 .step-number {
   font-family: 'Cormorant', serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2rem;
   color: var(--amber);
   margin-bottom: 0.5rem;

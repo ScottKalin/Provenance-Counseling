@@ -63,8 +63,8 @@ body {
   background: var(--cream);
   color: var(--charcoal);
   font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 1.7;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -76,7 +76,7 @@ body {
 .nav-links a {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  font-size: 0.78rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--stone);
@@ -86,8 +86,8 @@ body {
   transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
 }
 
-.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 0.88rem; letter-spacing: 0.06em; }
-.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 0.88rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 1.25rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 1.25rem; letter-spacing: 0.06em; }
 
 .nav-cta {
   color: var(--amber) !important;
@@ -95,7 +95,7 @@ body {
 }
 .nav-cta:hover {
   color: var(--charcoal) !important;
-  font-size: 0.88rem;
+  font-size: 1.25rem;
   letter-spacing: 0.08em;
 }
 .nav-cta:hover::before {
@@ -109,7 +109,7 @@ body {
   .nav-toggle { display: block; z-index: 101; }
   .nav-links { position: fixed; top: 0; right: -100%; width: 75%; max-width: 320px; height: 100vh; background: var(--cream); flex-direction: column; padding: 5rem 2rem 2rem; gap: 1.5rem; transition: right 0.3s; box-shadow: -4px 0 20px rgba(0,0,0,0.08); }
   .nav-links.open { right: 0; }
-  .nav-links a { color: var(--charcoal) !important; font-size: 0.85rem; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 1rem; }
 }
 
 .therapist-hero { padding: 10rem 2rem 5rem; display: flex; justify-content: center; align-items: center; gap: 4rem; max-width: 1000px; margin: 0 auto; }
@@ -117,16 +117,16 @@ body {
 
 .therapist-hero-photo { width: 300px; height: 380px; border-radius: 6px; background: linear-gradient(135deg, var(--stone-pale), var(--linen)); flex-shrink: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 .therapist-hero-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
-.photo-placeholder { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; color: var(--stone); letter-spacing: 0.1em; text-transform: uppercase; }
+.photo-placeholder { font-family: 'DM Sans', sans-serif; font-size: 0.875rem; color: var(--stone); letter-spacing: 0.1em; text-transform: uppercase; }
 
 .therapist-hero-text { max-width: 520px; }
 .therapist-hero-text h1 { font-family: 'Cormorant', serif; font-weight: 400; font-size: clamp(2rem, 4vw, 2.8rem); color: var(--charcoal); line-height: 1.2; margin-bottom: 0.25rem; }
-.therapist-cred { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone); margin-bottom: 1.75rem; }
-.therapist-hero-text .intro { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.05rem; color: var(--slate); line-height: 1.7; }
+.therapist-cred { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone); margin-bottom: 1.75rem; }
+.therapist-hero-text .intro { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.25rem; color: var(--slate); line-height: 1.7; }
 
-.content-section { max-width: 680px; margin: 0 auto; padding: 4rem 2rem; }
+.content-section { max-width: 780px; margin: 0 auto; padding: 4rem 2rem; }
 .content-section h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.8rem; color: var(--charcoal); line-height: 1.25; margin-bottom: 1.5rem; }
-.content-section p { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.95rem; color: var(--slate); line-height: 1.85; margin-bottom: 1.25rem; }
+.content-section p { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 1.25rem; color: var(--slate); line-height: 1.85; margin-bottom: 1.25rem; }
 .content-section p:last-child { margin-bottom: 0; }
 .content-section em { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.02em; }
 
@@ -238,25 +238,25 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.therapist-cred { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--water); margin-bottom: 1.75rem; }
+.therapist-cred { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--water); margin-bottom: 1.75rem; }
 
 .page-cta { padding: 5rem 2rem; text-align: center; background: linear-gradient(175deg, rgba(107,127,138,0.08) 0%, rgba(196,148,58,0.08) 100%); }
 .page-cta h2 { font-family: 'Cormorant', serif; font-weight: 400; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--charcoal); margin-bottom: 1rem; }
 .page-cta p { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1rem; color: var(--stone); max-width: 500px; margin: 0 auto 2rem; line-height: 1.7; }
 
-.btn-primary { display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); background: var(--charcoal); padding: 1rem 2.5rem; border-radius: 3px; text-decoration: none; transition: all 0.3s; }
+.btn-primary { display: inline-block; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 1rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cream); background: var(--charcoal); padding: 1rem 2.5rem; border-radius: 3px; text-decoration: none; transition: all 0.3s; }
 .btn-primary:hover { background: var(--amber); color: var(--deep); }
 
 .footer { background: var(--deep); padding: 3rem 2rem; text-align: center; }
-.footer-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.1rem; color: var(--stone); margin-bottom: 0.5rem; }
-.footer-info { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.72rem; color: var(--slate); line-height: 1.8; }
+.footer-brand { font-family: 'Cormorant', serif; font-weight: 400; font-size: 1.25rem; color: var(--stone); margin-bottom: 0.5rem; }
+.footer-info { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; color: var(--slate); line-height: 1.8; }
 .footer-links { margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
-.footer-links a { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
+.footer-links a { font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); text-decoration: none; transition: color 0.2s; }
 .footer-links a:hover { color: var(--amber); }
-.footer-copy { margin-top: 2rem; font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 0.65rem; color: var(--slate); }
+.footer-copy { margin-top: 2rem; font-family: 'DM Sans', sans-serif; font-weight: 400; font-size: 0.875rem; color: var(--slate); }
 /* PULL QUOTES */
 .pull-quote {
-  max-width: 680px;
+  max-width: 780px;
   margin: 3rem auto;
   padding: 2rem 2.5rem;
   border-left: 4px solid var(--amber);
