@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy | Provenance Counseling</title>
+<meta name="description" content="What the Provenance Counseling website collects, why, who holds it, and how to have it removed.">
+<link rel="canonical" href="https://provenancecounseling.com/privacy.html">
+<meta property="og:title" content="Privacy | Provenance Counseling">
+<meta property="og:description" content="What the Provenance Counseling website collects, why, who holds it, and how to have it removed.">
+<meta property="og:url" content="https://provenancecounseling.com/privacy.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Provenance Counseling">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --stone: #8A8578;
+  --stone-light: #B8B2A6;
+  --stone-pale: #D4CFC6;
+  --amber: #C4943A;
+  --amber-soft: #D4AD5E;
+  --amber-glow: #E8CC8A;
+  --slate: #4A4F54;
+  --charcoal: #2E3134;
+  --deep: #1E2124;
+  --sage: #7A8F7A;
+  --moss: #5C6E54;
+  --water: #6B7F8A;
+  --linen: #F2EDE4;
+  --cream: #FAF7F2;
+  --warm-white: #FDFCF9;
+  --rain: #9BA3AB;
+  --mist: #C5CCD3;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.25rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--stone-pale);
+}
+
+.nav-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4rem 0;
+  transition: color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-links li:nth-child(odd) a:hover { color: var(--moss); font-size: 1.25rem; letter-spacing: 0.06em; }
+.nav-links li:nth-child(even) a:hover { color: var(--water); font-size: 1.25rem; letter-spacing: 0.06em; }
+
+.nav-cta {
+  color: var(--amber) !important;
+  font-weight: 500;
+}
+.nav-cta:hover {
+  color: var(--charcoal) !important;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+}
+.nav-cta:hover::before {
+  background: rgba(196, 148, 58, 0.1) !important;
+}
+
+.nav-toggle { display: none; cursor: pointer; }
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--charcoal);
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav { padding: 1rem 1.5rem; }
+  .nav-toggle { display: block; z-index: 101; }
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--cream);
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.08);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { color: var(--charcoal) !important; font-size: 1rem; }
+  .nav-cta { background: var(--charcoal) !important; border-color: var(--charcoal) !important; }
+}
+
+/* PAGE HEADER */
+.page-header {
+  padding: 8rem 2rem 3rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--charcoal);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--slate);
+  line-height: 1.8;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* FORM */
+.privacy-body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem;
+}
+.privacy-body h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--charcoal);
+  margin: 3rem 0 1rem;
+}
+.privacy-body p,
+.privacy-body li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--slate);
+}
+.privacy-body p + p { margin-top: 1rem; }
+.privacy-body ul { padding-left: 1.25rem; margin-bottom: 1rem; }
+.privacy-body li + li { margin-top: 0.5rem; }
+.privacy-body strong { font-weight: 500; color: var(--charcoal); }
+.privacy-body a { color: var(--charcoal); text-decoration: underline; text-decoration-color: var(--amber); text-underline-offset: 4px; }
+.privacy-body a:hover { color: var(--amber); }
+.privacy-body .updated { margin-top: 3rem; font-size: 1rem; color: var(--stone); }
+
+.footer {
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--stone-pale);
+}
+
+.footer-brand {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.footer-info {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--stone);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover { color: var(--amber); }
+
+.footer-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--stone-light);
+}
+
+/* Page header entrance */
+.page-header h1 {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.8s ease 0.3s forwards;
+}
+.page-header p {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.8s ease 0.6s forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer reveal */
+.footer {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.footer.visible {
+  opacity: 1;
+}
+
+</style>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-KOR6JH_PU9-fYcgeHzs7c.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav-brand">Provenance Counseling</a>
+  <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="scott.html">Scott Kalin</a></li>
+    <li><a href="cate.html">Cate Kalin</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="services.html#faq">FAQ</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<div class="page-header">
+  <h1>Privacy</h1>
+  <p>Provenance Counseling LLC runs this site. This page says what we collect here, why, and how to have it removed.</p>
+</div>
+
+<!-- Words: workspace-system/provenance-counseling/copy/2026-10-14_privacy-page_DRAFT.md (CW, checked
+     against this site's code). Scott 2026-10-14 14:30: "i need privacy page for FoE and Provenance
+     build and pushed as soon as possible". Linked quietly from the footer only. -->
+<main class="privacy-body">
+  <h2>What we collect</h2>
+  <ul>
+    <li><strong>When you fill out the contact form:</strong> your name, email, phone number, which therapist you're interested in, and your message.</li>
+    <li><strong>When you visit:</strong> a count of page visits, with no cookies and nothing that names you (Plausible).</li>
+  </ul>
+  <p>That's all. There are no ads on this site, and we never sell your information.</p>
+
+  <h2>Why</h2>
+  <p>To get back to you about therapy, and to see which pages people read.</p>
+
+  <h2>Who holds it</h2>
+  <ul>
+    <li>Netlify hosts the site and passes your form message to us.</li>
+    <li>Plausible counts visits.</li>
+  </ul>
+
+  <h2>To be removed</h2>
+  <p>Call or text us at (608) 572-7592, or send a note through the <a href="contact.html">contact form</a>, and we'll delete your message.</p>
+
+  <p class="updated">Last updated: October 14, 2026</p>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">Provenance Counseling</div>
+  <div class="footer-info">
+    Scott Kalin, LPC · Cate Kalin, LCSW<br>
+    Online therapy for Wisconsin adults
+  </div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="scott.html">Scott Kalin</a>
+    <a href="cate.html">Cate Kalin</a>
+    <a href="services.html">Services</a>
+    <a href="services.html#faq">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+  <div class="footer-copy">© 2026 Provenance Counseling. All rights reserved.</div>
+</footer>
+
+<script>
+// Footer reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.footer').forEach(el => observer.observe(el));
+
+// Mobile nav: close on link click and outside tap
+const navLinks = document.querySelector('.nav-links');
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && !e.target.closest('.nav-toggle')) {
+      navLinks.classList.remove('open');
+    }
+  });
+}
+</script>
+
+</body>
+</html>
